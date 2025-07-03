@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & Description */}
           <div className="md:col-span-1">
-            <h3 className="brush-script logo-small text-secondary mb-4 font-light">La Finestra</h3>
+            <h3 className="texgyre-chorus logo-small text-secondary mb-4">La Finestra</h3>
             <p className="text-sm text-gray-300 mb-4">
               Une fenêtre sur l'Italie au cœur de Genève depuis 2006. 
               Cuisine traditionnelle italienne dans un cadre chaleureux et authentique.

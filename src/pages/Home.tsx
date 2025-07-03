@@ -21,34 +21,34 @@ const Home = () => {
     }
   ];
 
-  const menuHighlights = [
+  const specialties = [
     {
-      category: 'Antipasti',
-      name: 'Vitello Tonnato',
-      description: 'À la Génoise - Veal slices with sauce at Genoese style',
-      price: '43.-',
-      image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop'
+      name: "Carré d'Agneau",
+      price: "62.-",
+      descriptionFr: "Servi avec polenta gratinée et légumes du jardin",
+      descriptionEn: "Rack of lamb, served with polenta gratinée and garden vegetables",
+      image: "https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
     },
     {
-      category: 'Primi Piatti',
-      name: 'Pennette à la Finestra',
-      description: 'Artichauts poêlés et son jambon San Daniele avec sa crème, sauge, noix de muscade et thym',
-      price: '36.-',
-      image: 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop'
+      name: "Poêlée d'Artichauts",
+      price: "48.-",
+      descriptionFr: "Accompagnée du Scampi, Noix de St Jacques, avec son jus de langoustines",
+      descriptionEn: "Pan-fried artichokes with lobster juice, with scampi and St. Jacques scallops",
+      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
     },
     {
-      category: 'Le Carni',
-      name: 'Tagliata de Bœuf',
-      description: 'Accompagnée d\'une sauce aux bolets, pommes de terre rôties',
-      price: '64.-',
-      image: 'https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop'
+      name: "Foie de Veau à la Vénitienne",
+      price: "54.-",
+      descriptionFr: "Accompagné d'un risotto au prosecco et parmesan",
+      descriptionEn: "Veal liver at the Venetian, accompanied by parmesan and prosecco risotto",
+      image: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
     },
     {
-      category: 'I Dolci',
-      name: 'Tiramisu classique à l\'amaretto',
-      description: 'Traditional Tiramisu with amaretto and cacao',
-      price: '16.-',
-      image: 'https://images.pexels.com/photos/6880219/pexels-photo-6880219.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop'
+      name: "Tiramisu classique au cacao",
+      price: "16.-",
+      descriptionFr: "Café, cacao et mascarpone, un trio de saveurs qui sublime le palais",
+      descriptionEn: "Traditional Tiramisu with amaretto and cocoa",
+      image: "https://images.pexels.com/photos/6880219/pexels-photo-6880219.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
     }
   ];
 
@@ -117,12 +117,12 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.4), rgba(68, 15, 30, 0.4)), url('/div.inspect-element-1751526475423.jpeg')`
+            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.35), rgba(68, 15, 30, 0.35)), url('/Principal.jpeg')`
           }}
         />
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="brush-script logo-large text-secondary mb-6 animate-fade-in-up font-light">
+          <h1 className="texgyre-chorus logo-large text-secondary mb-6 animate-fade-in-up">
             La Finestra
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light animate-fade-in-up" style={{animationDelay: '0.2s'}}>
@@ -160,12 +160,12 @@ const Home = () => {
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Depuis 2006, La Finestra vous invite à découvrir l'authenticité de la cuisine italienne 
-                dans un cadre chaleureux au cœur de Genève. Notre chef passionné perpétue les traditions 
-                culinaires transmises de génération en génération.
+                dans un cadre <strong>chaleureux et romantique</strong>, au cœur de Genève. Ce restaurant gastronomique met à l'honneur les 
+                <strong> plats à base de truffe</strong>, élaborés avec passion par notre chef.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Chaque plat est préparé avec des ingrédients frais importés directement d'Italie, 
-                dans le respect des recettes traditionnelles qui font la richesse de la gastronomie italienne.
+                Chaque plat est préparé avec des ingrédients frais importés d'Italie, 
+                dans le respect des recettes traditionnelles transmises de génération en génération.
               </p>
               <Link
                 to="/about"
@@ -186,7 +186,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Menu Preview Section */}
+      {/* Specialties Section */}
       <section className="py-20 bg-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -197,13 +197,13 @@ const Home = () => {
               </h2>
             </div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-              Découvrez un aperçu de notre menu authentique, préparé avec passion 
+              Découvrez nos plats signature, préparés avec passion 
               et des ingrédients d'exception importés directement d'Italie.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {menuHighlights.map((dish, index) => (
+            {specialties.map((dish, index) => (
               <div 
                 key={index}
                 className="bg-white rounded-lg shadow-lg overflow-hidden group animate-fade-in-up"
@@ -215,24 +215,20 @@ const Home = () => {
                     alt={dish.name}
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-accent text-white px-3 py-1 rounded-full text-xs font-semibold">
-                      {dish.category}
+                  <div className="absolute top-4 right-4">
+                    <span className="bg-accent text-white px-3 py-1 rounded-full text-lg font-bold">
+                      {dish.price}
                     </span>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-primary mb-2">{dish.name}</h3>
-                  <p className="text-gray-600 text-sm mb-4 leading-relaxed overflow-hidden" style={{
-                    display: '-webkit-box',
-                    WebkitLineClamp: 3,
-                    WebkitBoxOrient: 'vertical'
-                  }}>
-                    {dish.description}
+                  <h3 className="text-lg font-bold text-primary mb-3">{dish.name}</h3>
+                  <p className="text-gray-700 text-sm mb-2 leading-relaxed">
+                    {dish.descriptionFr}
                   </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-xl font-bold text-accent">{dish.price}</span>
-                  </div>
+                  <p className="text-gray-600 text-xs italic leading-relaxed">
+                    {dish.descriptionEn}
+                  </p>
                 </div>
               </div>
             ))}

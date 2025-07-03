@@ -36,7 +36,7 @@ const Header = () => {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <Link to="/" className="brush-script logo-medium text-secondary hover:text-white transition-colors font-light">
+            <Link to="/" className="texgyre-chorus logo-medium text-secondary hover:text-white transition-colors">
               La Finestra
             </Link>
 

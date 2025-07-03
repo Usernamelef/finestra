@@ -54,6 +54,11 @@ const Home = () => {
 
   const restaurantGallery = [
     {
+      src: '/WhatsApp Image 2025-07-01 at 18.25.06.jpeg',
+      alt: 'Façade du restaurant La Finestra avec terrasse romantique et roses rouges',
+      category: 'facade'
+    },
+    {
       src: '/BCD37293-4E2E-4C86-A960-1054D4C6A824.jpeg',
       alt: 'Terrasse extérieure avec parasols et tables dressées',
       category: 'terrasse'
@@ -274,7 +279,8 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <span className="text-white font-semibold text-lg capitalize">
-                    {image.category === 'terrasse' ? 'Terrasse' : 
+                    {image.category === 'facade' ? 'Façade' :
+                     image.category === 'terrasse' ? 'Terrasse' : 
                      image.category === 'interieur' ? 'Intérieur' : 'Extérieur'}
                   </span>
                 </div>

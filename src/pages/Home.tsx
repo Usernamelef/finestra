@@ -27,28 +27,28 @@ const Home = () => {
       price: "62.-",
       descriptionFr: "Servi avec polenta gratinée et légumes du jardin",
       descriptionEn: "Rack of lamb, served with polenta gratinée and garden vegetables",
-      image: "https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+      image: "/Carré d'Agneau.jpg"
     },
     {
       name: "Poêlée d'Artichauts",
       price: "48.-",
       descriptionFr: "Accompagnée du Scampi, Noix de St Jacques, avec son jus de langoustines",
       descriptionEn: "Pan-fried artichokes with lobster juice, with scampi and St. Jacques scallops",
-      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+      image: "/Poêlée d'Artichauts.JPG"
     },
     {
       name: "Foie de Veau à la Vénitienne",
       price: "54.-",
       descriptionFr: "Accompagné d'un risotto au prosecco et parmesan",
       descriptionEn: "Veal liver at the Venetian, accompanied by parmesan and prosecco risotto",
-      image: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+      image: "/Foie de Veau à la Vénitienne.JPG"
     },
     {
       name: "Tiramisu classique au cacao",
       price: "16.-",
       descriptionFr: "Café, cacao et mascarpone, un trio de saveurs qui sublime le palais",
       descriptionEn: "Traditional Tiramisu with amaretto and cocoa",
-      image: "https://images.pexels.com/photos/6880219/pexels-photo-6880219.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+      image: "/Tiramisu classique au cacao.jpg"
     }
   ];
 
@@ -122,7 +122,11 @@ const Home = () => {
         />
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="texgyre-chorus logo-large text-secondary mb-6 animate-fade-in-up">
+          <h1 className="texgyre-chorus text-secondary mb-8 animate-fade-in-up" style={{
+            fontSize: 'clamp(4rem, 8vw, 7rem)',
+            lineHeight: '1.1',
+            textShadow: '3px 3px 6px rgba(0, 0, 0, 0.4)'
+          }}>
             La Finestra
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light animate-fade-in-up" style={{animationDelay: '0.2s'}}>

@@ -1,236 +1,292 @@
 import React, { useState } from 'react';
-import { Wine, Coffee, Martini } from 'lucide-react';
+import { Wine, Coffee, Martini, ChefHat } from 'lucide-react';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('antipasti');
 
   const menuCategories = [
-    { id: 'antipasti', name: 'Antipasti', icon: '🍅' },
+    { id: 'antipasti', name: 'Antipasti', icon: '🧀' },
     { id: 'primi', name: 'Primi Piatti', icon: '🍝' },
     { id: 'carni', name: 'Le Carni', icon: '🥩' },
     { id: 'pesci', name: 'I Pesci', icon: '🐟' },
-    { id: 'dolci', name: 'I Dolci', icon: '🍮' },
-    { id: 'boissons', name: 'Boissons', icon: '🍷' }
+    { id: 'dolci', name: 'I Dolci', icon: '🍰' },
+    { id: 'menu-soir', name: 'Menu du Soir', icon: '🍽️' },
+    { id: 'boissons', name: 'Boissons & Vins', icon: '🍷' }
   ];
 
   const menuItems = {
     antipasti: [
-      { 
-        name: 'Vitello Tonnato', 
-        description: 'À la Génoise - Veal slices with sauce at Genoese style', 
-        price: '43.-' 
+      {
+        name: 'Vitello Tonnato',
+        price: '46.-',
+        descriptionFr: 'À la Génoise',
+        descriptionEn: 'Veal slices with sauce at Genovese style'
       },
-      { 
-        name: 'Carpaccio de Thon', 
-        description: 'Fenouil mariné au citron, huile d\'olive, pecorino piquant et tomate Datterino - Tuna carpaccio with marinated fennel in olive oil and lemon, spicy pecorino and Datterino tomato, basil', 
-        price: '38.-' 
+      {
+        name: 'Carpaccio de Thon',
+        price: '38.-',
+        descriptionFr: 'Aux fenouils marinés à l\'huile, pecorino piquant et tomate Datterino',
+        descriptionEn: 'Tuna carpaccio with spicy pecorino (cheese), Datterino tomatoes and olive oil marinated fennel'
       },
-      { 
-        name: 'Carpaccio de Bœuf', 
-        description: 'Avec une mousseline et lamelles de truffe noire d\'automne - Beef carpaccio with muslin and slices of truffle', 
-        price: '40.-' 
+      {
+        name: 'Carpaccio de Bœuf',
+        price: '44.-',
+        descriptionFr: 'Avec mousseline d\'aubergine et lamelles de vieux parmesan',
+        descriptionEn: 'Beef carpaccio with eggplant mousseline, salade seasonal and strip aged parmesan'
       },
-      { 
-        name: 'Burrata', 
-        description: 'Servis avec des courgettes grillés, tomates grappa et basilic - Burrata and grilled zucchini with tomatoes grappa and basil', 
-        price: '32.-' 
+      {
+        name: 'Burrata aux saveurs de l\'été',
+        price: '34.-',
+        descriptionFr: 'Avec légumes grillés et tomates grappe fraîches, aceto balsamique caramélisé',
+        descriptionEn: 'Burrata with grilled vegetables and vine tomatoes with caramelized balsamic vinegar'
       },
-      { 
-        name: 'Salade Roquette', 
-        description: 'Accompagné d\'artichauts à la romaine, tomates et parmesan - Rocket salad with romaine artichokes, tomatoes, and parmesan slices', 
-        price: '21.-' 
+      {
+        name: 'Salade Roquette',
+        price: '26.-',
+        descriptionFr: 'Aux artichauts à la romaine, tomates rondes et lamelles de parmesan',
+        descriptionEn: 'Rocket salad with romaine artichokes, round tomatoes and parmesan slices'
       },
-      { 
-        name: 'Poêlée d\'Artichauts', 
-        description: 'Scampi, Noix de St Jacques avec son jus de langoustine - Pan artichokes, scampi and St. Jacques scallops with langoustine juice', 
-        price: '44.-' 
+      {
+        name: 'Poêlée d\'Artichauts',
+        price: '48.-',
+        descriptionFr: 'Accompagnée du scampi, noix de St Jacques, avec son jus de langoustines',
+        descriptionEn: 'Pan-fried artichokes with lobster juice, with scampi and St. Jacques scallops'
       },
-      { 
-        name: 'Jambon San Daniel', 
-        description: 'Avec bufala di campana - San Daniele ham with bufala di campana', 
-        price: '40.-' 
+      {
+        name: 'Jambon San Daniele',
+        price: '42.-',
+        descriptionFr: 'Avec bufala di Campana – Un mariage de saveurs',
+        descriptionEn: 'San Daniele ham with bufala di campana, eggplant, tomato and basil salad'
       },
-      { 
-        name: 'Bufala alla Sicilienne', 
-        description: 'Mozzarella di buffala, aubergine, oignon, tomate et basilic - Mozzarella di buffala with eggplant, onion, tomatoes and basil', 
-        price: '30.-' 
-      },
-      { 
-        name: 'Potage à la courge', 
-        description: 'Velouté de courge de saison', 
-        price: '26.-' 
+      {
+        name: 'Salade de Saison',
+        price: '28.-',
+        descriptionFr: 'Accompagnée de Bresaola della Valtellina',
+        descriptionEn: ''
       }
     ],
     primi: [
-      { 
-        name: 'Pennette à la Finestra', 
-        description: 'Artichauts poêlés et son jambon San Daniele avec sa crème, sauge, noix de muscade et thym - Finestra\'s pennette with cream and San Daniele ham, sage, nutmeg, thyme and pan artichokes', 
-        price: '36.-' 
+      {
+        name: 'Pennette à la Finestra',
+        price: '38.-',
+        descriptionFr: 'Artichauts poêlés, jambon San Daniele, crème, sauge, noix de muscade et thym',
+        descriptionEn: 'Finestra\'s pennette (pasta) with cream and San Daniele ham, sage, nutmeg, thyme and pan-fried artichokes'
       },
-      { 
-        name: 'Ravioli de Bœuf', 
-        description: 'Accompagné de chanterelles, vin blanc, tomate Datterino, huile d\'olive et ciboulette - Beef ravioli with chanterelles, white wine, Datterino tomatoes, olive oil and chives', 
-        price: '42.-' 
+      {
+        name: 'Ravioli de Bœuf',
+        price: '42.-',
+        descriptionFr: 'Avec chanterelles dans une sauce au vin blanc, tomate Datterino et ciboulette',
+        descriptionEn: 'With tomato Datterino, sauce vin blanc and chanterelle'
       },
-      { 
-        name: 'Gnocchi à la Roquette', 
-        description: 'Avec une crème de gorgonzola et amandes effilées - Rocket gnocchi with gorgonzola cream and roasted almonds', 
-        price: '34.-' 
+      {
+        name: 'Gnocchi Roquette',
+        price: '36.-',
+        descriptionFr: 'Avec crème à la Gorgonzola et roquette – Saveurs du nord de l\'Italie',
+        descriptionEn: 'Rocket gnocchi with gorgonzola cream'
       },
-      { 
-        name: 'Tortellonis à la Ricotta', 
-        description: 'Artichauts poêlés, sauce beurre et sauge - Ricotta tortelloni, with pan artichokes, butter, and sage sauce', 
-        price: '38.-' 
+      {
+        name: 'Tortelloni à la Ricotta',
+        price: '38.-',
+        descriptionFr: 'Avec artichauts poêlés, sauce beurre et sauge',
+        descriptionEn: 'Ricotta tortelloni with pan artichokes, butter, and sage sauce'
       },
-      { 
-        name: 'Tagliolini Maison', 
-        description: 'Dans son jus de langoustines, scampis, tomates Datterino et câpres de Salina - Tagliolini of the house in lobster juice, scampis, Datterino tomatoes and capers of Salina', 
-        price: '48.-' 
+      {
+        name: 'Tagliolini Maison',
+        price: '52.-',
+        descriptionFr: 'Avec scampi, dans son jus de langoustines, tomates Datterino et câpres de Salina',
+        descriptionEn: 'Tagliolini of the house in lobster juice, scampis, Datterino tomatoes and capers of Salina'
       },
-      { 
-        name: 'Risotto aux champignons', 
-        description: 'Aux Bolets et chanterelles - Risotto with boletus and chanterelles mushrooms', 
-        price: '46.-' 
+      {
+        name: 'Risotto aux fruits de mer',
+        price: '54.-',
+        descriptionFr: 'Servi avec noix de St Jacques et scampi',
+        descriptionEn: 'With scallops and langoustin'
       }
     ],
     carni: [
-      { 
-        name: 'Tagliata de Bœuf', 
-        description: 'Accompagnée d\'une sauce aux bolets, pommes de terre rôties - Beef tagliata with boletus sauce, roasted potatoes (Origine Suisse)', 
-        price: '64.-' 
+      {
+        name: 'Tagliata de Bœuf',
+        price: '76.-',
+        descriptionFr: 'Accompagnée d\'une sauce morilles, servie avec pommes de terre rôties et salade roquette',
+        descriptionEn: 'Beef tagliata with rocket salad, roasted potato, morels sauce',
+        origin: '(Origine Suisse)'
       },
-      { 
-        name: 'Carré d\'agneau', 
-        description: 'Avec une polenta gratinée au gorgonzola et sa jardinière de mini légume - Rack of Lamb served with a polenta gratinated gorgonzola cheese and baby vegetables (Origine Irlande)', 
-        price: '56.-' 
+      {
+        name: 'Carré d\'Agneau',
+        price: '62.-',
+        descriptionFr: 'Servi avec polenta gratinée et légumes du jardin',
+        descriptionEn: 'Rack of lamb, served with polenta gratinée and garden vegetables',
+        origin: '(Origin Irlande)'
       },
-      { 
-        name: 'Foie de veau à la Vénitienne', 
-        description: 'Accompagnée d\'un risotto au prosecco - Veal liver at the Venetian with onion and Prosecco risotto (Origine Suisse)', 
-        price: '48.-' 
+      {
+        name: 'Foie de Veau à la Vénitienne',
+        price: '54.-',
+        descriptionFr: 'Accompagné d\'un risotto au prosecco et parmesan',
+        descriptionEn: 'Veal liver at the Venetian, accompanied by parmesan and prosecco risotto',
+        origin: '(Origin Suisse)'
       }
     ],
     pesci: [
-      { 
-        name: 'Filet de Thon Poêlé', 
-        description: 'À la Sicilienne et légumes du marché - Tuna fillet served with a Sicilienne and day vegetables (Origine Sri Lanka)', 
-        price: '54.-' 
+      {
+        name: 'Filet de Thon Poêlé',
+        price: '56.-',
+        descriptionFr: 'Avec épinards, tomates Datterino et pommes de terre rôties',
+        descriptionEn: 'With spinach, Datterino tomato and roasted potatoes',
+        origin: '(Origin Sri Lanka)'
       },
-      { 
-        name: 'Filets de Loup', 
-        description: 'Dans son jus de langoustine, tomate Datterino, piment rouge, oignon et olives taggiasche, servis avec un riso venere aux chanterelles - Bass fillet in its langoustine juice, Datterino tomato, red pepper, onion and taggiasche olives, served with a chanterelle riso venere (Origine France)', 
-        price: '52.-' 
+      {
+        name: 'La Mer et la Terre',
+        price: '52.-',
+        descriptionFr: 'Filet de loup grillé et chanterelles, servi avec tagliarini (pâte maison), tomates Datterino et ciboulettes',
+        descriptionEn: 'Grilled sea bass fillet, and chanterelles, served with tagliolini (homemade pasta)',
+        origin: '(Origin France)'
       }
     ],
     dolci: [
-      { 
-        name: 'Panna Cotta', 
-        description: 'À l\'amarenatta - Cherry amarenatta panna cotta', 
-        price: '16.-' 
+      {
+        name: 'Panna Cotta',
+        price: '16.-',
+        descriptionFr: 'Aux fruits rouges – Douceur et fraîcheur',
+        descriptionEn: 'Red fruit panna cotta'
       },
-      { 
-        name: 'Tiramisu classique à l\'amaretto', 
-        description: 'Traditional Tiramisu with amaretto and cacao', 
-        price: '16.-' 
+      {
+        name: 'Tiramisu classique au cacao',
+        price: '16.-',
+        descriptionFr: 'Café, cacao et mascarpone – Un trio de saveurs qui sublime le palais',
+        descriptionEn: 'Traditional Tiramisu with amaretto and cocoa'
       },
-      { 
-        name: 'Mousse au chocolat blanc', 
-        description: 'Aux figues - White chocolate mousse with figs', 
-        price: '16.-' 
+      {
+        name: 'Rouge Passion',
+        price: '16.-',
+        descriptionFr: 'Tiramisu aux fruits de bois',
+        descriptionEn: 'Red fruits tiramisu'
       },
-      { 
-        name: 'Poire caramélisée au vin rouge', 
-        description: 'Accompagnée d\'une glace vanille - Caramelized pear in red wine served with a vanilla ice cream', 
-        price: '16.-' 
+      {
+        name: 'Mousse blanche au chocolat',
+        price: '16.-',
+        descriptionFr: 'Avec orange nature, zeste doré et coulis d\'orange',
+        descriptionEn: 'White chocolate mousse with natural orange, golden zest, and orange coulis'
+      },
+      {
+        name: 'Cassata Napolitaine',
+        price: '16.-',
+        descriptionFr: 'Ricotta, fruits confits, chocolat, vanille et fraises – Un trio divin',
+        descriptionEn: 'Napolitaine cassata with ricotta, candied fruit, chocolate, vanilla and strawberries — a divine trio'
       }
     ],
-    boissons: []
+    'menu-soir': [
+      {
+        name: 'Menu du Soir',
+        price: '136.- CHF',
+        items: [
+          {
+            course: 'Entrée',
+            name: 'Poêlée d\'Artichauts',
+            descriptionFr: 'Scampi et Noix de St Jacques, avec son jus de langoustines',
+            descriptionEn: 'Pan-fried artichokes on lobster juice with scampi\'s and St. Jacques scallops'
+          },
+          {
+            course: 'Plat',
+            name: 'Tagliata de Bœuf',
+            descriptionFr: 'Sauce morilles, pommes de terre rôties, salade roquette',
+            descriptionEn: 'Beef tagliata with rocket salad, roasted potato, morels sauce',
+            origin: '(Origine Suisse)'
+          },
+          {
+            course: 'Dessert',
+            name: 'Tiramisu Rouge',
+            descriptionFr: 'Aux fruits de bois',
+            descriptionEn: 'Red fruits tiramisu'
+          }
+        ]
+      }
+    ]
   };
 
   const drinkCategories = [
     {
       title: 'Apéritifs',
       items: [
-        { name: 'Martini Blanc/Rouge', description: '15% - 4cl', price: '10.-' },
-        { name: 'Campari', description: '23% - 4cl', price: '10.-' },
-        { name: 'Pastis', description: '45% - 4cl', price: '10.-' },
-        { name: 'Kir', description: '10cl', price: '14.-' },
-        { name: 'Kir Royal', description: '10cl', price: '18.-' },
-        { name: 'Gin-Tonic', description: '4cl', price: '18.-' },
-        { name: 'Aperol Spritz', description: '2dl', price: '18.-' },
-        { name: 'Vodka', description: '4cl', price: '16.-' },
-        { name: 'Moët et Chandon brut', description: '1dl', price: '18.-' },
-        { name: 'Prosecco brut Superiore DOCG', description: '1dl', price: '16.-' }
+        { name: 'Martini Blanc / Rouge', description: '15% – 4cl', price: '10.00 CHF' },
+        { name: 'Campari', description: '23% – 4cl', price: '10.00 CHF' },
+        { name: 'Pastis', description: '45% – 4cl', price: '10.00 CHF' },
+        { name: 'Kir', description: '10cl', price: '14.00 CHF' },
+        { name: 'Kir Royal', description: '10cl', price: '18.00 CHF' },
+        { name: 'Gin-Tonic', description: '4cl', price: '18.00 CHF' },
+        { name: 'Aperol Spritz', description: '2dl', price: '18.00 CHF' },
+        { name: 'Vodka', description: '4cl', price: '16.00 CHF' },
+        { name: 'Moët et Chandon brut', description: '1dl', price: '18.00 CHF' },
+        { name: 'Prosecco brut Superiore DOCG', description: '1dl', price: '16.00 CHF' }
       ]
     },
     {
       title: 'Dynastie de la Finestra',
-      subtitle: '(Bar à cocktails à partir de 18h00)',
+      subtitle: 'Bar à cocktails à partir de 18h00',
       items: [
-        { name: 'Cocktail Japon', description: 'Letchi, Sirop Rhubarbe maison, vodka et Umeshu (liqueur de Prune)', price: '23.-' },
-        { name: 'Cocktail La Finestra', description: 'Italicus, Gin Malfy, sirop orange sanguine maison, citron jaune et basilic', price: '23.-' },
-        { name: 'Cocktail Rosé Monroe', description: 'Rosé, aperol, Purée framboise maison, romarins et perrier', price: '23.-' }
+        { name: 'Cocktail La Finestra', description: 'Italicus, Gin Malfy, sirop orange sanguine maison, citron jaune et basilic', price: '23.00 CHF' },
+        { name: 'Cocktail Rosé Fizzy', description: 'Rosé, Aperol, purée framboise maison, romarin et Perrier', price: '23.00 CHF' }
       ]
     },
     {
       title: 'Bière',
       items: [
-        { name: 'Peroni', description: '33cl', price: '10.-' }
+        { name: 'Peroni', description: '33cl', price: '10.00 CHF' }
       ]
     },
     {
       title: 'Boissons au verre',
       items: [
-        { name: 'Lait', description: '25cl', price: '3.-' },
-        { name: 'Jus de fruit', description: '25cl', price: '3.-' },
-        { name: 'Verre d\'eau gazeuse', description: '25cl', price: '3.-' }
+        { name: 'Lait', description: '25cl', price: '4.00 CHF' },
+        { name: 'Verre d\'eau gazeuse', description: '25cl', price: '4.00 CHF' },
+        { name: 'Jus de fruit', description: '25cl', price: '4.00 CHF' }
       ]
     },
     {
-      title: 'Minérales et jus de fruits',
+      title: 'Minérales & Jus de fruits',
       items: [
-        { name: 'Aqua San Pellegrino', description: '50cl', price: '7.50.-' },
-        { name: 'Aqua Panna', description: '50cl', price: '7.50.-' },
-        { name: 'Perrier', description: '33cl', price: '7.50.-' },
-        { name: 'Coca-Cola', description: '33cl', price: '7.50.-' },
-        { name: 'Coca-Cola Zero', description: '33cl', price: '7.50.-' },
-        { name: 'Thé froid citron', description: '33cl', price: '7.50.-' },
-        { name: 'Schweppes Tonic', description: '20cl', price: '7.50.-' },
-        { name: 'Nectar d\'orange', description: '20cl', price: '7.50.-' },
-        { name: 'Nectar de Tomate', description: '20cl', price: '7.50.-' },
-        { name: 'Jus de Pomme Ramseier', description: '33cl', price: '7.50.-' },
-        { name: 'Jus d\'orange frais', description: '20cl', price: '9.-' },
-        { name: 'San Bitter', description: '10cl', price: '6.-' },
-        { name: 'Carafe d\'eau', description: '5dl', price: '3.50.-' }
+        { name: 'Aqua San Pellegrino', description: '50cl', price: '7.50 CHF' },
+        { name: 'Aqua Panna', description: '50cl', price: '7.50 CHF' },
+        { name: 'Perrier', description: '33cl', price: '7.50 CHF' },
+        { name: 'Coca-Cola', description: '33cl', price: '7.50 CHF' },
+        { name: 'Coca-Cola Zero', description: '33cl', price: '7.50 CHF' },
+        { name: 'Thé froid citron', description: '33cl', price: '7.50 CHF' },
+        { name: 'Schweppes Tonic', description: '20cl', price: '7.50 CHF' },
+        { name: 'Nectar d\'orange', description: '20cl', price: '7.50 CHF' },
+        { name: 'Nectar de tomate', description: '20cl', price: '7.50 CHF' },
+        { name: 'Jus de pomme Ramseier', description: '33cl', price: '7.50 CHF' },
+        { name: 'Jus d\'orange frais', description: '20cl', price: '9.00 CHF' },
+        { name: 'San Bitter', description: '10cl', price: '6.00 CHF' },
+        { name: 'Carafe d\'eau', description: '50cl', price: '4.00 CHF' }
       ]
     },
     {
-      title: 'Crus au Verre (vin ouvert)',
+      title: 'Crus au verre (vin ouvert)',
       sections: [
         {
           subtitle: 'Rosé',
           items: [
-            { name: '20/26 Elena Walch, 2020', description: '1dl', price: '13.-' }
+            { name: '20/26 Elena Walch', description: '1dl', price: '16.00 CHF' }
           ]
         },
         {
           subtitle: 'Rouge',
           items: [
-            { name: 'Sangiovese – Toscana, Badilante 414, 2020', description: '1dl', price: '13.-' },
-            { name: 'Primitivo di Puglia, Tator, IGP, 2020', description: '1dl', price: '13.-' }
+            { name: 'Sangiovese – Toscana, Badilante 414', description: '1dl', price: '14.00 CHF' },
+            { name: 'Primitivo di Puglia, Tator, IGP', description: '1dl', price: '14.00 CHF' },
+            { name: 'Italo Cescon Merlot', description: '1dl', price: '14.00 CHF' }
           ]
         },
         {
           subtitle: 'Blanc',
           items: [
-            { name: 'Pinot Grigio Venezie DOC Italo Cescon, 2021', description: '1dl', price: '13.-' },
-            { name: 'Chardonnay Alto Adige DOC, Elena Walch, 2021', description: '1dl', price: '13.-' }
+            { name: 'Pinot Grigio Venezie DOC Italo Cescon, 2021', description: '1dl', price: '14.00 CHF' },
+            { name: 'Chardonnay Alto Adige DOC, Elena Walch, 2021', description: '1dl', price: '14.00 CHF' }
           ]
         },
         {
-          subtitle: 'Per Dessert',
+          subtitle: 'Pour dessert',
           items: [
-            { name: 'Deltetto, Bric du Liun, 2016, Appassite de Piemonte', description: '1dl', price: '18.-' }
+            { name: 'Deltetto, Bric du Liun, Appassite de Piemonte', description: '1dl', price: '18.00 CHF' }
           ]
         }
       ]
@@ -238,164 +294,156 @@ const Menu = () => {
     {
       title: 'Vini Rosati',
       items: [
-        { name: '20/26 Elena Walch, Vigneti Delle Dolomiti, 2020', description: 'Pinot Noir, Lagrein et Merlot', price: '78.-' }
+        { name: '20/26 Elena Walch, Vigneti Delle Dolomiti, 2023', description: '40% Pinot Noir, 40% Lagrein, 20% Merlot', price: '88.00 CHF' }
       ]
     },
     {
       title: 'Vini Bianchi',
       items: [
-        { name: 'Pinot Grigio Venezie, DOC Italo Cescon', description: '(Delle Venezie) 2021', price: '75.-' },
-        { name: 'Chardonnay Alto Adige DOC, Elena Walch, 2021', description: '', price: '78.-' },
-        { name: 'Zibibbo Sicilia DOC, Gagliardetta Curatolo Arini, 2020', description: '', price: '88.-' }
+        { name: 'Pinot Grigio Venezie DOC Italo Cescon', description: '', price: '79.00 CHF' },
+        { name: 'Chardonnay Cardelino, Alto Adige DOC, Elena Walch, 2023', description: '', price: '88.00 CHF' },
+        { name: 'Deltetto, Bric du Liun, Appassite de Piemonte', description: '', price: '95.00 CHF' },
+        { name: 'Sauvignon Castel Ringber, Elena Walch DOC, 2022', description: '', price: '98.00 CHF' },
+        { name: 'Vistamare Toscana IGP, Ca\'Marcanda 2023', description: '', price: '138.00 CHF' },
+        { name: 'Gaia & Rey Langhe DOP, Chardonnay, Gaja 2022', description: '', price: '590.00 CHF' }
       ]
     },
     {
       title: 'Vini Rossi',
       sections: [
         {
-          subtitle: 'Della Regione del Veneto',
+          subtitle: 'Région Veneto',
           items: [
-            { name: 'Amarone Della Valpolicella DOCG Superiore, San Rustico, 2017', description: 'Corvina, Rondinella et Mollinara', price: '105.-' },
-            { name: 'Santomè Merlot IGT, 2015', description: '100% Merlot', price: '95.-' }
+            { name: 'Amarone Della Valpolicella DOCG Superiore, San Rustico, 2018', description: '68% Corvina, 27% Rondinella, 5% Mollinara', price: '115.00 CHF' },
+            { name: 'Italo Cescon Merlot IGT, 2022', description: '100% Merlot', price: '95.00 CHF' }
           ]
         },
         {
-          subtitle: 'Della Regione Puglia',
+          subtitle: 'Région Puglia',
           items: [
-            { name: 'Tator, Primitivo di Puglia, IGP, 2020', description: '', price: '68.-' }
+            { name: 'Domiziano Primitivo di Puglia, IGP', description: '', price: '72.00 CHF' }
           ]
         },
         {
-          subtitle: 'Della Regione Sicilia',
+          subtitle: 'Région Piemonte',
           items: [
-            { name: 'Lumà, Cantina Cellaro IGT 2020', description: 'Nero D\'Avola et Syrah', price: '64.-' },
-            { name: 'Sito Dell\'Ulmo, Planeta IGT 2015', description: 'Merlot', price: '78.-' }
+            { name: 'Dolcetto d\'Alba DOC 2022, Figli Luigi Oddero', description: '', price: '78.00 CHF' },
+            { name: 'Barbera d\'Asti DOCG Superiore 2021, Elio Perrone', description: '', price: '85.00 CHF' },
+            { name: 'Oddero Langhe DOC, Nebbiolo, 2021', description: '', price: '97.00 CHF' },
+            { name: 'Gaja Sito Moresco DOC 2021', description: '', price: '168.00 CHF' },
+            { name: 'Gaja Barolo Dagromis DOCG 2019', description: '', price: '205.00 CHF' },
+            { name: 'Gaja Barbaresco DOCG 2019', description: '', price: '420.00 CHF' }
           ]
         },
         {
-          subtitle: 'Regione Autònoma della Sardegna',
+          subtitle: 'Région Toscana',
           items: [
-            { name: 'Cannonau Tamara 2016', description: '100% Cannonau', price: '68.-' }
+            { name: 'Badilante 414, 2020', description: '100% Sangiovese', price: '78.00 CHF' },
+            { name: 'Villa Antinori 2022', description: '', price: '84.00 CHF' },
+            { name: 'Bolgheri Rosso DOC 2022 I Tirreni Beccaia', description: '', price: '78.00 CHF' },
+            { name: 'Le Volte Dell\'Ornellaia 2022', description: '', price: '88.00 CHF' },
+            { name: 'Rosso di Montalcino DOC 2021', description: '', price: '88.00 CHF' },
+            { name: 'Marchese Antinori, Chianti Classico DOCG, Riserva 2021', description: '', price: '98.00 CHF' },
+            { name: 'Brunello di Montalcino DOCG 2016, Col D\'Orcia', description: 'Biologique 2019', price: '154.00 CHF' },
+            { name: 'Gaja Ca\'Marcanda Magari 2021', description: '', price: '178.00 CHF' }
           ]
         },
         {
-          subtitle: 'Della Regione del Piemonte',
+          subtitle: 'Grandes bouteilles (Toscane)',
           items: [
-            { name: 'Dolcetto d\'Alba DOC 2020, Figli Luigi Oddero', description: '100% Dolcetto', price: '68.-' },
-            { name: 'Barbera d\'Asti DOCG Superiore 2020', description: 'Elio Perrone, Mongovone 100% Barbera', price: '85.-' },
-            { name: 'Oddero Langhe DOC, Nebbiolo, 2018, Figli Luigi Oddero', description: '', price: '97.-' },
-            { name: 'Gaja Sito Moresco DOC 2018', description: 'Nebbiolo, Cabernet, Merlot', price: '158.-' },
-            { name: 'Gaja Barolo Dagromis DOCG 2017', description: 'Nebbiolo', price: '205.-' },
-            { name: 'Gaja Barbaresco DOCG 2018', description: 'Nebbiolo', price: '320.-' }
-          ]
-        },
-        {
-          subtitle: 'Della Regione Toscana',
-          items: [
-            { name: 'Badilante 414, 2020', description: '100% Sangiovese', price: '68.-' },
-            { name: 'Villa Antinori 2019', description: '60% Sangiovese, 20% Cabernet Sauvignon, 15% Merlot, 5% Syrah', price: '72.-' },
-            { name: 'Bolgheri Rosso DOC 2020, Podere Grattamacco', description: 'Cabernet Sauvignon, Cabernet Franc, Merlot, Sangiovese', price: '75.-' },
-            { name: 'Le Volte Dell\'Ornellaia 2020', description: 'Cabernet Sauvignon, Merlot, Cabernet Franc', price: '88.-' },
-            { name: 'Rosso di Montalcino DOC 2020', description: 'Sangiovese Grosso 15%', price: '88.-' },
-            { name: 'Marchese Antinori, Chianti Classico DOCG, Riserva 2019', description: 'Sangiovese, Cabernet Sauvignon', price: '98.-' },
-            { name: 'Brunello di Montalcino DOCG 2016, Col D\'Orcia', description: '*Biologico', price: '145.-' },
-            { name: 'Gaja Ca\' Marcanda Magari 2020', description: '60% Cabernet Franc, 30% Cabernet Sauvignon, 10% Petit Verdot', price: '158.-' },
-            { name: 'Antinori Tignanello 2019', description: '80% Sangiovese, 15% Cabernet Sauvignon, 5% Cabernet Franc', price: '420.-' },
-            { name: 'Ca\' Marcanda Bolgheri camarcanda, 2011, Gaja', description: '50% Merlot, 40% Cabernet Sauvignon, 10% Cabernet Franc', price: '349.-' },
-            { name: 'Tenuta S. Guido Sassicaia 2019', description: '85% Cabernet Sauvignon, 15% Cabernet Franc', price: '620.-' },
-            { name: 'Tenuta dell\'Ornellaia 2019', description: '34% Cabernet Sauvignon, 32% Merlot, 20% Petit Verdot, 14% Cabernet Franc', price: '560.-' },
-            { name: 'Antinori Solaia 2018', description: '75% Cabernet Sauvignon, 25% Sangiovese, 5% Cabernet Franc', price: '720.-' }
+            { name: 'Brunello di Montalcino DOP, Pieve Santa Restituta Gaja 2018', description: '', price: '284.00 CHF' },
+            { name: 'Antinori Tignanello 2021', description: '', price: '370.00 CHF' },
+            { name: 'Tenuta S. Guido Sassicaia 2021', description: '', price: '620.00 CHF' },
+            { name: 'Tenuta dell\'Ornellaia 2021', description: '', price: '560.00 CHF' },
+            { name: 'Antinori Solaia 2018', description: '', price: '720.00 CHF' }
           ]
         }
       ]
     },
     {
-      title: 'Le Bottiglia Mezzine (37,5 cl)',
+      title: 'Le Bottiglie Mezzine (37,5 cl)',
       items: [
-        { name: 'Villa Antinori 2019', description: '60% Sangiovese, 20% Cabernet Sauvignon, 15% Merlot, 5% Syrah', price: '42.-' },
-        { name: 'Amarone Della Valpolicella DOCG Superiore, 2016, San Rustico', description: 'Corvina, Rondinella et Mollinara', price: '68.-' },
-        { name: 'Gaja Ca\' Marcanda Magari 2020', description: '60% Cabernet Franc, 30% Cabernet Sauvignon, 10% Petit Verdot', price: '78.-' },
-        { name: 'Antinori Tignanello 2019', description: '80% Sangiovese, 15% Cabernet Sauvignon, 5% Cabernet Franc', price: '210.-' },
-        { name: 'Tenuta S. Guido Sassicaia 2019', description: '85% Cabernet Sauvignon, 15% Cabernet Franc', price: '270.-' },
-        { name: 'Tenuta dell\'Ornellaia 2019', description: '34% Cabernet Sauvignon, 32% Merlot, 20% Petit Verdot, 14% Cabernet Franc', price: '285.-' }
+        { name: 'Villa Antinori 2019', description: '', price: '46.00 CHF' },
+        { name: 'Amarone Della Valpolicella DOCG Superiore, 2016', description: '', price: '72.00 CHF' },
+        { name: 'Gaja Ca\' Marcanda Magari 2020', description: '', price: '88.00 CHF' },
+        { name: 'Antinori Tignanello 2022', description: '', price: '185.00 CHF' },
+        { name: 'Tenuta S. Guido Sassicaia 2019', description: '', price: '270.00 CHF' },
+        { name: 'Tenuta dell\'Ornellaia 2019', description: '', price: '285.00 CHF' }
       ]
     },
     {
-      title: 'Le Bottiglia Magnums (150 cl)',
+      title: 'Le Bottiglie Magnums (150 cl)',
       items: [
-        { name: 'Villa Antinori 2019', description: '60% Sangiovese, 20% Cabernet Sauvignon, 15% Merlot, 5% Syrah', price: '160.-' },
-        { name: 'Amarone Della Valpolicella DOCG Superiore, 2016, San Rustico', description: 'Corvina, Rondinella et Mollinara', price: '205.-' },
-        { name: 'Marchese Antinori, Chianti Classico DOCG, Riserva 2019', description: 'Sangiovese, Cabernet Sauvignon', price: '195.-' },
-        { name: 'Brunello di Montalcino DOCG 2016, Col D\'Orcia', description: '*Biologico', price: '290.-' },
-        { name: 'Antinori Tignanello 2019', description: '80% Sangiovese, 15% Cabernet Sauvignon, 5% Cabernet Franc', price: '640.-' }
+        { name: 'Villa Antinori 2022', description: '', price: '168.00 CHF' },
+        { name: 'Amarone Della Valpolicella DOCG Superiore, 2016', description: '', price: '215.00 CHF' },
+        { name: 'Marchese Antinori, Chianti Classico Riserva 2019', description: '', price: '195.00 CHF' },
+        { name: 'Brunello di Montalcino DOCG 2018, Col D\'Orcia', description: '', price: '302.00 CHF' },
+        { name: 'Antinori Tignanello 2021', description: '', price: '720.00 CHF' }
       ]
     },
     {
-      title: 'Champagne e spumante',
+      title: 'Champagne & Spumante',
       items: [
-        { name: 'Ruinart Champagne Blanc de blanc', description: '', price: '350.-' },
-        { name: 'Ruinart Champagne Brut Rosé', description: '', price: '250.-' },
-        { name: 'Laurent Perrier Brut Cuvée Rosé', description: '', price: '250.-' },
-        { name: 'Moët et Chandon, Brut Imperial', description: '', price: '170.-' },
-        { name: 'Franciacorta Millesimato Rosé 2016 L\'Acrobata', description: '', price: '140.-' },
-        { name: 'Bortolin Angelo Prosecco', description: 'Brut Superiore Valdobbiadene DOCG 2021', price: '95.-' }
+        { name: 'Ruinart Champagne Blanc de Blanc', description: '', price: '350.00 CHF' },
+        { name: 'Ruinart Champagne Brut Rosé', description: '', price: '250.00 CHF' },
+        { name: 'Laurent Perrier Brut Cuvée Rosé', description: '', price: '250.00 CHF' },
+        { name: 'Moët et Chandon Brut Impérial', description: '', price: '170.00 CHF' },
+        { name: 'Franciacorta Millesimato Rosé Le Quattro Terre', description: '', price: '140.00 CHF' },
+        { name: 'Franciacorta Extra Brut DOCG Le Quattro Terre', description: '', price: '125.00 CHF' },
+        { name: 'Bortolin Angelo Prosecco Brut Superiore Valdobbiadene DOCG 2021', description: '', price: '95.00 CHF' }
       ]
     },
     {
       title: 'Vini da Dessert',
       items: [
-        { name: 'Deltetto, Bric du Liun 2016, Appassite de Piemonte', description: '', price: '95.-' }
+        { name: 'Deltetto, Bric du Liun 2016, Appassite de Piemonte', description: '', price: '95.00 CHF' }
       ]
     },
     {
-      title: 'Il Digestivi al bicchiere',
+      title: 'Digestifs au verre',
       items: [
-        { name: 'Limoncello Maison', description: '2cl', price: '12.-' }
+        { name: 'Limoncello Maison', description: '2cl', price: '14.00 CHF' }
       ]
     },
     {
       title: 'Grappa',
       items: [
-        { name: 'Berta Bric del Gaian, 2012 43%', description: '2cl', price: '26.-' },
-        { name: 'Sassicaia 40%', description: '2cl', price: '26.-' },
-        { name: 'Ornellaia 42%', description: '2cl', price: '26.-' },
-        { name: 'Barolo Riserva 43%', description: '2cl', price: '21.-' },
-        { name: 'Nonino di Mosc. 41%', description: '2cl', price: '21.-' },
-        { name: 'Tignanello 42%', description: '2cl', price: '21.-' },
-        { name: 'Nonino 41%', description: '2cl', price: '14.-' }
+        { name: 'Berta Bric del Gaian, 2012', description: '43%', price: '26.00 CHF' },
+        { name: 'Berta Tre Soli Tre, 2015', description: '43%', price: '28.00 CHF' },
+        { name: 'Sassicaia', description: '40%', price: '26.00 CHF' },
+        { name: 'Ornellaia', description: '42%', price: '26.00 CHF' },
+        { name: 'Barolo Riserva', description: '43%', price: '21.00 CHF' },
+        { name: 'Nonino di Moscato', description: '41%', price: '21.00 CHF' },
+        { name: 'Tignanello', description: '42%', price: '21.00 CHF' },
+        { name: 'Nonino', description: '41%', price: '14.00 CHF' },
+        { name: 'Gaja Barbaresco', description: '42%', price: '28.00 CHF' },
+        { name: 'Gaja Barolo', description: '42%', price: '28.00 CHF' }
       ]
     },
     {
       title: 'Liqueurs',
       items: [
-        { name: 'Amaretto DiSaronno 28%', description: '4cl', price: '16.-' },
-        { name: 'Sambuca 40%', description: '4cl', price: '16.-' },
-        { name: 'Amaro Averna 32%', description: '4cl', price: '16.-' },
-        { name: 'Williamine 43%', description: '4cl', price: '14.-' },
-        { name: 'Porto 19.5%', description: '4cl', price: '12.-' },
-        { name: 'Cognac Remy Martin 40%', description: '4cl', price: '18.-' },
-        { name: 'Whisky Single Malt 40%', description: '4cl', price: '18.-' },
-        { name: 'Whisky Blended 43%', description: '4cl', price: '16.-' },
-        { name: 'Brandy 38%', description: '4cl', price: '18.-' }
+        { name: 'Amaretto DiSaronno', description: '28%', price: '16.00 CHF' },
+        { name: 'Sambuca', description: '40%', price: '16.00 CHF' },
+        { name: 'Amaro Averna', description: '32%', price: '16.00 CHF' },
+        { name: 'Williamine', description: '43%', price: '14.00 CHF' },
+        { name: 'Porto', description: '19.5%', price: '12.00 CHF' },
+        { name: 'Cognac Remy Martin', description: '40%', price: '18.00 CHF' },
+        { name: 'Whisky Single Malt', description: '40%', price: '18.00 CHF' },
+        { name: 'Whisky Blended', description: '43%', price: '16.00 CHF' },
+        { name: 'Brandy', description: '38%', price: '18.00 CHF' }
       ]
     },
     {
-      title: 'Bevande calde',
+      title: 'Boissons chaudes',
       items: [
-        { name: 'Cafe/expresso/ristretto', description: '', price: '5.50.-' },
-        { name: 'Macchiato', description: '', price: '5.50.-' },
-        { name: 'The/Infusion', description: '', price: '6.50.-' },
-        { name: 'Cappuccino', description: '', price: '6.-' },
-        { name: 'Café double', description: '', price: '6.-' }
+        { name: 'Café / Expresso / Ristretto', description: '', price: '6.00 CHF' },
+        { name: 'Macchiato', description: '', price: '6.50 CHF' },
+        { name: 'Thé / Infusion', description: '', price: '6.50 CHF' },
+        { name: 'Cappuccino', description: '', price: '7.00 CHF' },
+        { name: 'Café double', description: '', price: '7.00 CHF' }
       ]
     }
-  ];
-
-  const wineSelection = [
-    { name: 'Chianti Classico DOCG', region: 'Toscane', price: '65.-' },
-    { name: 'Barolo DOCG', region: 'Piémont', price: '95.-' },
-    { name: 'Prosecco di Valdobbiadene', region: 'Vénétie', price: '48.-' },
-    { name: 'Brunello di Montalcino', region: 'Toscane', price: '120.-' }
   ];
 
   const renderDrinkSection = (section: any, index: number) => {
@@ -407,7 +455,6 @@ const Menu = () => {
         )}
         
         {section.sections ? (
-          // For wine sections with subsections
           <div className="space-y-6">
             {section.sections.map((subsection: any, subIndex: number) => (
               <div key={subIndex}>
@@ -429,7 +476,6 @@ const Menu = () => {
             ))}
           </div>
         ) : (
-          // For regular sections
           <div className="space-y-3">
             {section.items.map((item: any, itemIndex: number) => (
               <div key={itemIndex} className="flex justify-between items-start border-b border-gray-100 pb-2">
@@ -498,25 +544,76 @@ const Menu = () => {
                   // Drinks Menu
                   <div className="space-y-8">
                     {drinkCategories.map((section, index) => renderDrinkSection(section, index))}
+                    
+                    {/* Allergen Information */}
+                    <div className="mt-12 p-6 bg-secondary rounded-lg">
+                      <h3 className="text-lg font-bold text-primary mb-4">Prix en CHF, TVA incluse</h3>
+                    </div>
+                  </div>
+                ) : activeCategory === 'menu-soir' ? (
+                  // Evening Menu
+                  <div className="space-y-8">
+                    {menuItems['menu-soir'].map((menu, index) => (
+                      <div key={index} className="animate-fade-in-up">
+                        <div className="text-center mb-8">
+                          <h3 className="text-2xl font-bold text-primary mb-2">{menu.name}</h3>
+                          <p className="text-3xl font-bold text-accent">{menu.price}</p>
+                        </div>
+                        
+                        <div className="space-y-6">
+                          {menu.items.map((item: any, itemIndex: number) => (
+                            <div key={itemIndex} className="border-b border-gray-200 pb-4">
+                              <div className="flex items-center mb-2">
+                                <span className="bg-accent text-white px-3 py-1 rounded-full text-xs font-semibold mr-3">
+                                  {item.course}
+                                </span>
+                                <h4 className="text-xl font-bold text-primary">{item.name}</h4>
+                              </div>
+                              <p className="text-gray-700 mb-1">{item.descriptionFr}</p>
+                              <p className="text-gray-600 text-sm italic">{item.descriptionEn}</p>
+                              {item.origin && (
+                                <p className="text-xs text-gray-500 mt-1">{item.origin}</p>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 ) : (
                   // Food Menu
                   <div className="space-y-6">
-                    {menuItems[activeCategory as keyof typeof menuItems].map((item, index) => (
+                    {menuItems[activeCategory as keyof typeof menuItems].map((item: any, index: number) => (
                       <div 
                         key={index}
-                        className="flex justify-between items-start border-b border-gray-200 pb-4 last:border-b-0 animate-fade-in-up"
+                        className="border-b border-gray-200 pb-6 last:border-b-0 animate-fade-in-up"
                         style={{animationDelay: `${index * 0.1}s`}}
                       >
-                        <div className="flex-1">
-                          <h3 className="text-xl font-bold text-primary mb-2">{item.name}</h3>
-                          <p className="text-gray-700 text-sm leading-relaxed">{item.description}</p>
+                        <div className="flex justify-between items-start mb-3">
+                          <h3 className="text-xl font-bold text-primary">{item.name}</h3>
+                          <span className="text-xl font-bold text-accent ml-4">{item.price}</span>
                         </div>
-                        <div className="ml-4 flex-shrink-0">
-                          <span className="text-xl font-bold text-accent">{item.price}</span>
+                        
+                        <div className="space-y-2">
+                          <p className="text-gray-700 leading-relaxed">{item.descriptionFr}</p>
+                          <p className="text-gray-600 text-sm italic leading-relaxed">{item.descriptionEn}</p>
+                          {item.origin && (
+                            <p className="text-xs text-gray-500">{item.origin}</p>
+                          )}
                         </div>
                       </div>
                     ))}
+                    
+                    {/* Allergen Information for Food */}
+                    {activeCategory !== 'boissons' && (
+                      <div className="mt-12 p-6 bg-secondary rounded-lg">
+                        <h3 className="text-lg font-bold text-primary mb-4">Déclaration des allergènes</h3>
+                        <div className="space-y-2 text-sm">
+                          <p><strong>FR :</strong> Pour plus d'information sur les allergènes dans vos plats, veuillez-vous adresser à notre personnel.</p>
+                          <p><strong>EN :</strong> For more information on allergens in your dishes, please contact our staff.</p>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
@@ -545,17 +642,17 @@ const Menu = () => {
                       <div className="border-b border-gray-200 pb-3">
                         <h4 className="font-semibold text-primary text-sm">Cocktail La Finestra</h4>
                         <p className="text-xs text-gray-600">Notre signature</p>
-                        <p className="text-accent font-bold text-sm mt-1">23.-</p>
+                        <p className="text-accent font-bold text-sm mt-1">23.00 CHF</p>
                       </div>
                       <div className="border-b border-gray-200 pb-3">
-                        <h4 className="font-semibold text-primary text-sm">Sassicaia 2019</h4>
+                        <h4 className="font-semibold text-primary text-sm">Sassicaia 2021</h4>
                         <p className="text-xs text-gray-600">Toscane d'exception</p>
-                        <p className="text-accent font-bold text-sm mt-1">620.-</p>
+                        <p className="text-accent font-bold text-sm mt-1">620.00 CHF</p>
                       </div>
                       <div className="border-b border-gray-200 pb-3">
                         <h4 className="font-semibold text-primary text-sm">Limoncello Maison</h4>
                         <p className="text-xs text-gray-600">Fait maison</p>
-                        <p className="text-accent font-bold text-sm mt-1">12.-</p>
+                        <p className="text-accent font-bold text-sm mt-1">14.00 CHF</p>
                       </div>
                     </div>
                   </div>
@@ -566,13 +663,26 @@ const Menu = () => {
                     </p>
                     
                     <div className="space-y-4">
-                      {wineSelection.map((wine, index) => (
-                        <div key={index} className="border-b border-gray-200 pb-3 last:border-b-0">
-                          <h4 className="font-semibold text-primary text-sm">{wine.name}</h4>
-                          <p className="text-xs text-gray-600">{wine.region}</p>
-                          <p className="text-accent font-bold text-sm mt-1">{wine.price}</p>
-                        </div>
-                      ))}
+                      <div className="border-b border-gray-200 pb-3">
+                        <h4 className="font-semibold text-primary text-sm">Chianti Classico DOCG</h4>
+                        <p className="text-xs text-gray-600">Toscane</p>
+                        <p className="text-accent font-bold text-sm mt-1">98.00 CHF</p>
+                      </div>
+                      <div className="border-b border-gray-200 pb-3">
+                        <h4 className="font-semibold text-primary text-sm">Barolo DOCG</h4>
+                        <p className="text-xs text-gray-600">Piémont</p>
+                        <p className="text-accent font-bold text-sm mt-1">205.00 CHF</p>
+                      </div>
+                      <div className="border-b border-gray-200 pb-3">
+                        <h4 className="font-semibold text-primary text-sm">Prosecco Valdobbiadene</h4>
+                        <p className="text-xs text-gray-600">Vénétie</p>
+                        <p className="text-accent font-bold text-sm mt-1">95.00 CHF</p>
+                      </div>
+                      <div className="border-b border-gray-200 pb-3">
+                        <h4 className="font-semibold text-primary text-sm">Brunello di Montalcino</h4>
+                        <p className="text-xs text-gray-600">Toscane</p>
+                        <p className="text-accent font-bold text-sm mt-1">154.00 CHF</p>
+                      </div>
                     </div>
                   </div>
                 )}

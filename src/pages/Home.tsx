@@ -54,6 +54,11 @@ const Home = () => {
 
   const restaurantGallery = [
     {
+      src: '/A4A57481-0F3C-4D32-89C1-995B5C19A56B.jpeg',
+      alt: 'Terrasse romantique avec lanternes et tables dressées dans l\'ambiance du soir',
+      category: 'terrasse'
+    },
+    {
       src: '/WhatsApp Image 2025-07-01 at 18.25.06.jpeg',
       alt: 'Façade du restaurant La Finestra avec terrasse romantique et roses rouges',
       category: 'facade'

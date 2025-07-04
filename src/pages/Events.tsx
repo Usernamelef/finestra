@@ -59,10 +59,6 @@ const Events = () => {
       alt: 'Vue d\'ensemble de la salle événementielle avec éclairage tamisé'
     },
     {
-      src: '/db6eb43f-550a-4cf2-bcc2-1ab7747d679c.JPG',
-      alt: 'Table pour deux personnes avec chandelier doré'
-    },
-    {
       src: '/a062a32a-9730-4342-bfd8-811a32899dc3.JPG',
       alt: 'Chandelier en bronze avec bougies allumées'
     },

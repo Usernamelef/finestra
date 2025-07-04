@@ -283,9 +283,9 @@ const Contact = () => {
           
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.8947!2d6.1431!3d46.2044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ef6f596927%3A0x5c5c5c5c5c5c5c5c!2sRue%20de%20la%20Cit%C3%A9%2011%2C%201204%20Gen%C3%A8ve%2C%20Switzerland!5e0!3m2!1sen!2sch!4v1234567890123!5m2!1sen!2sch"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.994783340572!2d6.141882376725149!3d46.20230197109813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ff0db2fcd7%3A0x87f462cfe10d9f1f!2sLa%20Finestra!5e0!3m2!1sfr!2sch!4v1720095026123!5m2!1sfr!2sch"
               width="100%"
-              height="450"
+              height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"

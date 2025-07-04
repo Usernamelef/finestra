@@ -27,21 +27,21 @@ const Home = () => {
       price: "62.-",
       descriptionFr: "Servi avec polenta gratinée et légumes du jardin",
       descriptionEn: "Rack of lamb, served with polenta gratinée and garden vegetables",
-      image: "/Carré d'Agneau.jpg"
+      image: "/Carré d'Agneau copy.jpg"
     },
     {
       name: "Poêlée d'Artichauts",
       price: "48.-",
       descriptionFr: "Accompagnée du Scampi, Noix de St Jacques, avec son jus de langoustines",
       descriptionEn: "Pan-fried artichokes with lobster juice, with scampi and St. Jacques scallops",
-      image: "/Poêlée d'Artichauts.JPG"
+      image: "/Poele dArtichauts.jpg"
     },
     {
       name: "Foie de Veau à la Vénitienne",
       price: "54.-",
       descriptionFr: "Accompagné d'un risotto au prosecco et parmesan",
       descriptionEn: "Veal liver at the Venetian, accompanied by parmesan and prosecco risotto",
-      image: "/Foie de Veau à la Vénitienne.JPG"
+      image: "/Foie de Veau a la Venitienne.jpg"
     },
     {
       name: "Tiramisu classique au cacao",
@@ -128,7 +128,7 @@ const Home = () => {
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="texgyre-chorus text-secondary mb-8 animate-fade-in-up" style={{
-            fontSize: 'clamp(4rem, 8vw, 7rem)',
+            fontSize: 'clamp(5rem, 10vw, 8rem)',
             lineHeight: '1.1',
             textShadow: '3px 3px 6px rgba(0, 0, 0, 0.4)'
           }}>

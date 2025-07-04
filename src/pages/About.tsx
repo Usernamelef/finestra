@@ -12,17 +12,13 @@ const About = () => {
 
   const gallery = [
     '/image1.jpeg',
-    '/image2.jpg',
-    '/DSC1966_640.jpg',
-    '/DSC1913_422.jpg',
-    '/IMG_1858.jpg',
-    'https://images.pexels.com/photos/2814828/pexels-photo-2814828.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
+    '/image2.jpg'
   ];
 
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-white flex items-center justify-center min-h-[60vh]">
+      <section className="pt-40 pb-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-serif font-bold text-primary mb-6 animate-fade-in-up">
@@ -189,7 +185,7 @@ const About = () => {
             Notre restaurant
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {gallery.map((image, index) => (
               <div 
                 key={index}

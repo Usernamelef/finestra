@@ -17,6 +17,7 @@ const About = () => {
     '/la-finestra-geneve-equipe-restaurant.jpg',
     '/la-finestra-geneve-plat-specialite.jpg',
     '/la-finestra-geneve-facade-enseigne.jpeg'
+  ];
 
   return (
     <div className="animate-fade-in">

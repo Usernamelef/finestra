@@ -17,8 +17,7 @@ const About = () => {
     '/DSC1913_422.jpg',
     '/IMG_1858.jpg',
     '/image1.jpeg',
-    '/image2.jpg',
-    'https://images.pexels.com/photos/2814828/pexels-photo-2814828.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
+    '/image2.jpg'
   ];
 
   return (

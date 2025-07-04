@@ -65,10 +65,6 @@ const Events = () => {
     {
       src: '/a062a32a-9730-4342-bfd8-811a32899dc3.JPG',
       alt: 'Chandelier en bronze avec bougies allumées'
-    },
-    {
-      src: '/5a36fb7e-e9cc-40d0-bfc1-d4189802ca1c.JPG',
-      alt: 'Verres à vin et arrangement floral sur table dressée'
     }
   ];
 

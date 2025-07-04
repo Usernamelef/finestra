@@ -27,7 +27,7 @@ const Home = () => {
       price: "62.-",
       descriptionFr: "Servi avec polenta gratinée et légumes du jardin",
       descriptionEn: "Rack of lamb, served with polenta gratinée and garden vegetables",
-      image: "/Carré d'Agneau copy.jpg"
+      image: "/Carre d'Agneau.jpg"
     },
     {
       name: "Poêlée d'Artichauts",

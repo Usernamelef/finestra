@@ -7,12 +7,12 @@ const About = () => {
     { year: '2010', event: 'Agrandissement avec salle privée' },
     { year: '2015', event: 'Rénovation complète du restaurant' },
     { year: '2020', event: 'Adaptation et service de livraison' },
-    { year: '2024', event: 'Nouveau menu saisonnier' }
+    { year: '2025', event: 'Nouveau menu saisonnier' }
   ];
 
   const gallery = [
-    '/IMG_6560-2.jpg',
-    '/DSC3247-web.jpg',
+    '/image1.jpeg',
+    '/image2.jpg',
     '/DSC1966_640.jpg',
     '/DSC1913_422.jpg',
     '/IMG_1858.jpg',
@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="pt-40 pb-28 bg-white">
+      <section className="pt-32 pb-20 bg-white flex items-center justify-center min-h-[60vh]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-serif font-bold text-primary mb-6 animate-fade-in-up">
@@ -143,20 +143,18 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Chef Section */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up">
-              <div className="h-80 bg-gray-100 flex items-center justify-center">
+              <div className="h-80 bg-gray-100 flex items-center justify-center overflow-hidden">
                 <img
-                  src="/DSC1966_640.jpg"
-                  alt="Marco Rossi, Chef propriétaire"
-                  className="max-w-full max-h-full object-contain"
+                  src="/Chef.jpeg"
+                  alt="Le chef cuisinier de La Finestra"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-primary mb-2">Marco Rossi</h3>
-                <p className="text-accent font-semibold mb-4">Chef propriétaire</p>
+                <h3 className="text-2xl font-bold text-primary mb-2">Le chef</h3>
+                <p className="text-accent font-semibold mb-4">Chef cuisinier</p>
                 <p className="text-gray-700 leading-relaxed">
-                  Originaire de Bologne, Marco apporte plus de 25 ans d'expérience dans la cuisine italienne traditionnelle. 
-                  Passionné par l'authenticité des saveurs, il perpétue les recettes familiales transmises de génération en génération, 
-                  en utilisant exclusivement des ingrédients importés directement d'Italie.
+                  Passionné de cuisine italienne, notre chef vous propose une expérience authentique inspirée des traditions transmises de génération en génération. Il accorde une grande importance à la qualité des produits et à la finesse des saveurs.
                 </p>
               </div>
             </div>

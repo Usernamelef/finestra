@@ -69,8 +69,8 @@ const Home = () => {
       category: 'terrasse'
     },
     {
-      src: '/269CD06F-ED8B-485B-B750-557DF95D02C4.jpeg',
-      alt: 'Vue de la terrasse avec architecture genevoise typique',
+      src: '/Principal.jpeg',
+      alt: 'Façade du restaurant La Finestra avec terrasse romantique',
       category: 'terrasse'
     },
     {

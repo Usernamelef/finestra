@@ -11,7 +11,7 @@ const About = () => {
   ];
 
   const gallery = [
-    '/IMG_6560-2.jpg',
+    '/Principal copy.jpeg',
     '/DSC3247-web.jpg',
     '/DSC1966_640.jpg',
     '/DSC1913_422.jpg',

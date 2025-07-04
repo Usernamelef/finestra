@@ -65,6 +65,18 @@ const Events = () => {
     {
       src: '/a062a32a-9730-4342-bfd8-811a32899dc3.JPG',
       alt: 'Chandelier en bronze avec bougies allumées'
+    },
+    {
+      src: '/4e0b594d-f165-46d8-bd90-736d66abfe36.JPG',
+      alt: 'Art de la table raffiné avec nappes blanches'
+    },
+    {
+      src: '/5a36fb7e-e9cc-40d0-bfc1-d4189802ca1c.JPG',
+      alt: 'Verres à vin et arrangement floral sur table dressée'
+    },
+    {
+      src: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      alt: 'Table dressée avec attention aux détails et bougies'
     }
   ];
 

@@ -283,9 +283,9 @@ const Contact = () => {
           
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.994783340572!2d6.141882376725149!3d46.20230197109813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ff0db2fcd7%3A0x87f462cfe10d9f1f!2sLa%20Finestra!5e0!3m2!1sfr!2sch!4v1720095026123!5m2!1sfr!2sch"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.365869977858!2d6.144164000000001!3d46.2031763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6529711f9ed5%3A0x34703c7889b27bb1!2sla%20Finestra!5e0!3m2!1sfr!2sch!4v1751626759410!5m2!1sfr!2sch"
               width="100%"
-              height="400"
+              height="450"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"

@@ -223,6 +223,10 @@ const Home = () => {
                     src={dish.image}
                     alt={dish.name}
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop';
+                    }}
                   />
                   <div className="absolute top-4 right-4">
                     <span className="bg-accent text-white px-3 py-1 rounded-full text-lg font-bold">

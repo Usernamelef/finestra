@@ -14,7 +14,6 @@ const About = () => {
     '/truffes.jpg',
     '/DSC3247-web.jpg',
     '/DSC1966_640.jpg',
-    '/DSC1913_422.jpg',
     '/IMG_1858.jpg',
     '/image1.jpeg'
   ];

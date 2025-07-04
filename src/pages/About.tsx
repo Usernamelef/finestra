@@ -11,8 +11,14 @@ const About = () => {
   ];
 
   const gallery = [
+    '/IMG_6560-2.jpg',
+    '/DSC3247-web.jpg',
+    '/DSC1966_640.jpg',
+    '/DSC1913_422.jpg',
+    '/IMG_1858.jpg',
     '/image1.jpeg',
-    '/image2.jpg'
+    '/image2.jpg',
+    'https://images.pexels.com/photos/2814828/pexels-photo-2814828.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
   ];
 
   return (
@@ -185,7 +191,7 @@ const About = () => {
             Notre restaurant
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {gallery.map((image, index) => (
               <div 
                 key={index}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Calendar, Clock, Users, MessageSquare, CheckCircle } from 'lucide-react';
 
 const Reservations = () => {
@@ -45,10 +45,58 @@ const Reservations = () => {
     });
   };
 
-  const timeSlots = [
-    '11:30', '12:00', '12:30', '13:00', '13:30', '14:00',
+  // Horaires de base (suppression de 11:30)
+  const baseTimeSlots = [
+    '12:00', '12:30', '13:00', '13:30', '14:00',
     '18:30', '19:00', '19:30', '20:00', '20:30', '21:00', '21:30', '22:00'
   ];
+
+  // Fonction pour filtrer les horaires disponibles
+  const availableTimeSlots = useMemo(() => {
+    if (!formData.date) return baseTimeSlots;
+
+    const selectedDate = new Date(formData.date);
+    const today = new Date();
+    
+    // Normaliser les dates pour comparer seulement jour/mois/année
+    const selectedDateString = selectedDate.toDateString();
+    const todayString = today.toDateString();
+
+    // Si la date sélectionnée est aujourd'hui
+    if (selectedDateString === todayString) {
+      const currentHour = today.getHours();
+      const currentMinutes = today.getMinutes();
+      const currentTimeInMinutes = currentHour * 60 + currentMinutes;
+
+      return baseTimeSlots.filter(timeSlot => {
+        const [hours, minutes] = timeSlot.split(':').map(Number);
+        const slotTimeInMinutes = hours * 60 + minutes;
+        
+        // Retourner seulement les créneaux qui sont après l'heure actuelle
+        return slotTimeInMinutes > currentTimeInMinutes;
+      });
+    }
+
+    // Pour les dates futures, retourner tous les créneaux
+    return baseTimeSlots;
+  }, [formData.date]);
+
+  // Vérifier si la date sélectionnée est dans le passé
+  const isDateInPast = useMemo(() => {
+    if (!formData.date) return false;
+    
+    const selectedDate = new Date(formData.date);
+    const today = new Date();
+    
+    // Normaliser les dates pour comparer seulement jour/mois/année
+    selectedDate.setHours(0, 0, 0, 0);
+    today.setHours(0, 0, 0, 0);
+    
+    return selectedDate < today;
+  }, [formData.date]);
+
+  // Vérifier si le formulaire peut être soumis
+  const canSubmit = !isDateInPast && formData.date && formData.time && formData.guests && formData.name && formData.email && formData.phone;
 
   if (isSubmitted) {
     return (
@@ -168,8 +216,15 @@ const Reservations = () => {
                     onChange={handleChange}
                     required
                     min={new Date().toISOString().split('T')[0]}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent ${
+                      isDateInPast ? 'border-red-500 bg-red-50' : 'border-gray-300'
+                    }`}
                   />
+                  {isDateInPast && (
+                    <p className="text-red-500 text-sm mt-1">
+                      Veuillez sélectionner une date future.
+                    </p>
+                  )}
                 </div>
                 
                 <div>
@@ -182,13 +237,19 @@ const Reservations = () => {
                     value={formData.time}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
+                    disabled={!formData.date || isDateInPast}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
                   >
                     <option value="">Choisir une heure</option>
-                    {timeSlots.map((time) => (
+                    {availableTimeSlots.map((time) => (
                       <option key={time} value={time}>{time}</option>
                     ))}
                   </select>
+                  {formData.date && availableTimeSlots.length === 0 && (
+                    <p className="text-orange-600 text-sm mt-1">
+                      Aucun créneau disponible pour aujourd'hui. Veuillez choisir une date future.
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -286,10 +347,20 @@ const Reservations = () => {
               <div className="text-center animate-fade-in-up" style={{animationDelay: '0.5s'}}>
                 <button
                   type="submit"
-                  className="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105"
+                  disabled={!canSubmit}
+                  className={`px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform ${
+                    canSubmit
+                      ? 'bg-accent hover:bg-accent/90 text-white hover:scale-105'
+                      : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                  }`}
                 >
                   Envoyer la demande
                 </button>
+                {!canSubmit && formData.date && formData.time && (
+                  <p className="text-gray-500 text-sm mt-2">
+                    Veuillez remplir tous les champs obligatoires
+                  </p>
+                )}
               </div>
             </form>
           </div>

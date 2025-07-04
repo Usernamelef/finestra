@@ -226,10 +226,6 @@ const Events = () => {
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-64 object-cover transition-transform duration-500 hover:scale-110"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop';
-                  }}
                 />
               </div>
             ))}

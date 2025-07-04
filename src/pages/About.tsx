@@ -16,8 +16,7 @@ const About = () => {
     '/DSC1966_640.jpg',
     '/DSC1913_422.jpg',
     '/IMG_1858.jpg',
-    '/image1.jpeg',
-    '/image2.jpg'
+    '/image1.jpeg'
   ];
 
   return (

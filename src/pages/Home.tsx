@@ -27,89 +27,89 @@ const Home = () => {
       price: "62.-",
       descriptionFr: "Servi avec polenta gratinée et légumes du jardin",
       descriptionEn: "Rack of lamb, served with polenta gratinée and garden vegetables",
-      image: "/Carre dAgneau.jpg"
+      image: "/la-finestra-geneve-plat-agneau-polenta.jpg"
     },
     {
       name: "Poêlée d'Artichauts",
       price: "48.-",
       descriptionFr: "Accompagnée du Scampi, Noix de St Jacques, avec son jus de langoustines",
       descriptionEn: "Pan-fried artichokes with lobster juice, with scampi and St. Jacques scallops",
-      image: "/Poele dArtichauts.jpg"
+      image: "/la-finestra-geneve-plat-artichauts-stjacques.jpg"
     },
     {
       name: "Foie de Veau à la Vénitienne",
       price: "54.-",
       descriptionFr: "Accompagné d'un risotto au prosecco et parmesan",
       descriptionEn: "Veal liver at the Venetian, accompanied by parmesan and prosecco risotto",
-      image: "/Foie de Veau a la Venitienne.jpg"
+      image: "/la-finestra-geneve-plat-foie-veau-venitienne.jpg"
     },
     {
       name: "Tiramisu classique au cacao",
       price: "16.-",
       descriptionFr: "Café, cacao et mascarpone, un trio de saveurs qui sublime le palais",
       descriptionEn: "Traditional Tiramisu with amaretto and cocoa",
-      image: "/Tiramisu classique au cacao.jpg"
+      image: "/la-finestra-geneve-dessert-tiramisu-cacao.jpg"
     }
   ];
 
   const restaurantGallery = [
     {
-      src: '/A4A57481-0F3C-4D32-89C1-995B5C19A56B.jpeg',
+      src: '/la-finestra-geneve-terrasse-romantique-lanternes.jpeg',
       alt: 'Terrasse romantique avec lanternes et tables dressées dans l\'ambiance du soir',
       category: 'terrasse'
     },
     {
-      src: '/WhatsApp Image 2025-07-01 at 18.25.06.jpeg',
+      src: '/la-finestra-geneve-facade-terrasse-roses.jpeg',
       alt: 'Façade du restaurant La Finestra avec terrasse romantique et roses rouges',
       category: 'facade'
     },
     {
-      src: '/BCD37293-4E2E-4C86-A960-1054D4C6A824.jpeg',
+      src: '/la-finestra-geneve-terrasse-parasols.jpeg',
       alt: 'Terrasse extérieure avec parasols et tables dressées',
       category: 'terrasse'
     },
     {
-      src: '/Principal.jpeg',
-      alt: 'Façade du restaurant La Finestra avec terrasse romantique',
+      src: '/la-finestra-geneve-terrasse-architecture-genevoise.jpeg',
+      alt: 'Vue de la terrasse avec architecture genevoise typique',
       category: 'terrasse'
     },
     {
-      src: '/5FC2D24B-FE88-49FE-84A0-42C15FC20F4B.jpeg',
+      src: '/la-finestra-geneve-table-terrasse-cave-vins.jpeg',
       alt: 'Table dressée en terrasse avec vue sur la cave à vins',
       category: 'terrasse'
     },
     {
-      src: '/449981AF-E9A6-4580-8CFF-F7130A446CFA.jpeg',
+      src: '/la-finestra-geneve-art-table-verres-colores.jpeg',
       alt: 'Art de la table raffiné en terrasse avec verres colorés',
       category: 'terrasse'
     },
     {
-      src: '/57528187-F004-4E76-9F93-EE75BE403FAD.jpeg',
+      src: '/la-finestra-geneve-rue-pavee-terrasse.jpeg',
       alt: 'Rue pavée avec terrasse du restaurant La Finestra',
       category: 'terrasse'
     },
     {
-      src: '/E520E08F-39C6-429E-9704-64A51E142FAA.jpeg',
+      src: '/la-finestra-geneve-interieur-chaleureux.jpeg',
       alt: 'Salle intérieure avec chaises en cuir et tables dressées',
       category: 'interieur'
     },
     {
-      src: '/4C2130EC-A769-49F0-BCE3-3F922A7BF733.jpeg',
+      src: '/la-finestra-geneve-table-dressee-verres-vin.jpeg',
       alt: 'Table dressée avec verres à vin et arrangement floral',
       category: 'interieur'
     },
     {
-      src: '/3C327A0E-CF27-40F4-8FF9-1CC11A6CD953.jpeg',
+      src: '/la-finestra-geneve-decoration-coeur-bougies.jpeg',
       alt: 'Décoration romantique avec cœur en bois et bougies',
       category: 'interieur'
     },
     {
-      src: '/FF447DD9-55B0-426A-B6FD-6FA25A11D788.jpeg',
+      src: '/la-finestra-geneve-facade-enseigne.jpeg',
       alt: 'Façade du restaurant La Finestra avec enseigne',
       category: 'exterieur'
     },
     {
-      src: '/10687BA8-56D8-4585-BB1B-25D118940AAE.jpeg',
+      src: '/la-finestra-geneve-entree-menu-affiche.jpeg',
       alt: 'Entrée du restaurant avec menu affiché',
       category: 'exterieur'
     }
@@ -122,7 +122,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.35), rgba(68, 15, 30, 0.35)), url('/Principal.jpeg')`
+            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.35), rgba(68, 15, 30, 0.35)), url('/la-finestra-geneve-facade-principale.jpeg')`
           }}
         />
         
@@ -186,7 +186,7 @@ const Home = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/E520E08F-39C6-429E-9704-64A51E142FAA.jpeg"
+                src="/la-finestra-geneve-interieur-chaleureux.jpeg"
                 alt="Intérieur chaleureux du restaurant La Finestra"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />

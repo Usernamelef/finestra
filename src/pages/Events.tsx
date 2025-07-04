@@ -43,31 +43,31 @@ const Events = () => {
 
   const gallery = [
     {
-      src: '/ad8993f2-8725-4f03-afd2-167972984fdc.JPG',
+      src: '/la-finestra-geneve-salle-evenement-elegante.jpg',
       alt: 'Salle privée élégante avec banquettes en velours vert'
     },
     {
-      src: '/b2d24a2f-97d4-4592-816b-fdd2c6c4b8e2.JPG',
+      src: '/la-finestra-geneve-table-dressee-fleurs.jpg',
       alt: 'Table dressée avec verres à vin et bouquet de fleurs'
     },
     {
-      src: '/d27b89aa-d096-4631-996f-9c142adaaa7f.JPG',
+      src: '/la-finestra-geneve-detail-table-verrerie.jpg',
       alt: 'Détail de table avec verrerie fine et décoration florale'
     },
     {
-      src: '/d6693be6-e802-4b5f-aba2-3b46a754976c.JPG',
+      src: '/la-finestra-geneve-salle-evenement-tamisee.jpg',
       alt: 'Vue d\'ensemble de la salle événementielle avec éclairage tamisé'
     },
     {
-      src: '/a062a32a-9730-4342-bfd8-811a32899dc3.JPG',
+      src: '/la-finestra-geneve-chandelier-bougies.jpg',
       alt: 'Chandelier en bronze avec bougies allumées'
     },
     {
-      src: '/4e0b594d-f165-46d8-bd90-736d66abfe36.JPG',
+      src: '/la-finestra-geneve-art-table-nappes-blanches.jpg',
       alt: 'Art de la table raffiné avec nappes blanches'
     },
     {
-      src: '/5a36fb7e-e9cc-40d0-bfc1-d4189802ca1c.JPG',
+      src: '/la-finestra-geneve-verres-arrangement-floral.jpg',
       alt: 'Verres à vin et arrangement floral sur table dressée'
     }
   ];
@@ -79,7 +79,7 @@ const Events = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.6), rgba(68, 15, 30, 0.6)), url('/ad8993f2-8725-4f03-afd2-167972984fdc.JPG')`
+            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.6), rgba(68, 15, 30, 0.6)), url('/la-finestra-geneve-salle-evenement-elegante.jpg')`
           }}
         />
         
@@ -138,7 +138,7 @@ const Events = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/d6693be6-e802-4b5f-aba2-3b46a754976c.JPG"
+                src="/la-finestra-geneve-salle-evenement-tamisee.jpg"
                 alt="Salle privée La Finestra avec banquettes en velours"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />

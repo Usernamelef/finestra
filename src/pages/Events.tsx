@@ -69,6 +69,10 @@ const Events = () => {
     {
       src: '/4e0b594d-f165-46d8-bd90-736d66abfe36.JPG',
       alt: 'Art de la table raffiné avec nappes blanches'
+    },
+    {
+      src: '/5a36fb7e-e9cc-40d0-bfc1-d4189802ca1c.JPG',
+      alt: 'Verres à vin et arrangement floral sur table dressée'
     }
   ];
 

@@ -73,10 +73,6 @@ const Events = () => {
     {
       src: '/5a36fb7e-e9cc-40d0-bfc1-d4189802ca1c.JPG',
       alt: 'Verres à vin et arrangement floral sur table dressée'
-    },
-    {
-      src: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      alt: 'Table dressée avec attention aux détails et bougies'
     }
   ];
 

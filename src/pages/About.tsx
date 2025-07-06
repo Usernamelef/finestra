@@ -83,7 +83,7 @@ const About = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/IMG_6560-2.jpg"
+                src="/la-finestra-geneve-facade-restaurant-authentique.jpg"
                 alt="Façade du restaurant La Finestra"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />

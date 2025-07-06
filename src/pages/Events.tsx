@@ -43,31 +43,35 @@ const Events = () => {
 
   const gallery = [
     {
-      src: '/la-finestra-geneve-salle-evenement-elegante.jpg',
+      src: '/ad8993f2-8725-4f03-afd2-167972984fdc.JPG',
       alt: 'Salle privée élégante avec banquettes en velours vert'
     },
     {
-      src: '/la-finestra-geneve-table-dressee-fleurs.jpg',
+      src: '/b2d24a2f-97d4-4592-816b-fdd2c6c4b8e2.JPG',
       alt: 'Table dressée avec verres à vin et bouquet de fleurs'
     },
     {
-      src: '/la-finestra-geneve-detail-table-verrerie.jpg',
+      src: '/d27b89aa-d096-4631-996f-9c142adaaa7f.JPG',
       alt: 'Détail de table avec verrerie fine et décoration florale'
     },
     {
-      src: '/la-finestra-geneve-salle-evenement-tamisee.jpg',
+      src: '/d6693be6-e802-4b5f-aba2-3b46a754976c.JPG',
       alt: 'Vue d\'ensemble de la salle événementielle avec éclairage tamisé'
     },
     {
-      src: '/la-finestra-geneve-chandelier-bougies.jpg',
+      src: '/db6eb43f-550a-4cf2-bcc2-1ab7747d679c.JPG',
+      alt: 'Table pour deux personnes avec chandelier doré'
+    },
+    {
+      src: '/a062a32a-9730-4342-bfd8-811a32899dc3.JPG',
       alt: 'Chandelier en bronze avec bougies allumées'
     },
     {
-      src: '/la-finestra-geneve-art-table-nappes-blanches.jpg',
+      src: '/4e0b594d-f165-46d8-bd90-736d66abfe36.JPG',
       alt: 'Art de la table raffiné avec nappes blanches'
     },
     {
-      src: '/la-finestra-geneve-verres-arrangement-floral.jpg',
+      src: '/5a36fb7e-e9cc-40d0-bfc1-d4189802ca1c.JPG',
       alt: 'Verres à vin et arrangement floral sur table dressée'
     }
   ];
@@ -79,7 +83,7 @@ const Events = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.6), rgba(68, 15, 30, 0.6)), url('/la-finestra-geneve-salle-evenement-elegante.jpg')`
+            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.6), rgba(68, 15, 30, 0.6)), url('/ad8993f2-8725-4f03-afd2-167972984fdc.JPG')`
           }}
         />
         
@@ -138,7 +142,7 @@ const Events = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/la-finestra-geneve-salle-evenement-tamisee.jpg"
+                src="/d6693be6-e802-4b5f-aba2-3b46a754976c.JPG"
                 alt="Salle privée La Finestra avec banquettes en velours"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
@@ -222,10 +226,6 @@ const Events = () => {
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-64 object-cover transition-transform duration-500 hover:scale-110"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop';
-                  }}
                 />
               </div>
             ))}

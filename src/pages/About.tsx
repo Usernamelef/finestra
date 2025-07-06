@@ -11,12 +11,12 @@ const About = () => {
   ];
 
   const gallery = [
-    '/la-finestra-geneve-plat-truffes.jpg',
-    '/la-finestra-geneve-interieur-salle-manger.jpg',
-    '/la-finestra-geneve-interieur-detail-table.jpg',
-    '/la-finestra-geneve-equipe-restaurant.jpg',
-    '/la-finestra-geneve-plat-specialite.jpg',
-    '/la-finestra-geneve-facade-enseigne.jpeg'
+    '/truffes.jpg',
+    '/DSC3247-web.jpg',
+    '/DSC1966_640.jpg',
+    '/DSC1913_422.jpg',
+    '/IMG_1858.jpg',
+    '/image1.jpeg'
   ];
 
   return (
@@ -84,7 +84,7 @@ const About = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/la-finestra-geneve-facade-principale.jpeg"
+                src="/IMG_6560-2.jpg"
                 alt="Façade du restaurant La Finestra"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
@@ -145,7 +145,7 @@ const About = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up">
               <div className="h-80 bg-gray-100 flex items-center justify-center overflow-hidden">
                 <img
-                  src="/la-finestra-geneve-chef-cuisinier.jpeg"
+                  src="/Chef.jpeg"
                   alt="Le chef cuisinier de La Finestra"
                   className="w-full h-full object-cover object-center"
                 />
@@ -163,7 +163,7 @@ const About = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <div className="h-80 bg-gray-100 flex items-center justify-center">
                 <img
-                  src="/la-finestra-geneve-equipe-restaurant.jpg"
+                  src="/IMG_1858.jpg"
                   alt="L'équipe de La Finestra"
                   className="max-w-full max-h-full object-contain"
                 />

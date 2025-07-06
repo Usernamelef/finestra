@@ -11,11 +11,11 @@ const About = () => {
   ];
 
   const gallery = [
-    '/truffes.jpg',
-    '/DSC3247-web.jpg',
+    '/la-finestra-geneve-plat-truffes.jpg',
+    '/la-finestra-geneve-plat-specialite.jpg',
     '/DSC1913_422.jpg',
     '/IMG_1858.jpg',
-    '/image1.jpeg'
+    '/la-finestra-geneve-facade-principale.jpeg'
   ];
 
   return (

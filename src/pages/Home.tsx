@@ -27,28 +27,28 @@ const Home = () => {
       price: "62.-",
       descriptionFr: "Servi avec polenta gratinée et légumes du jardin",
       descriptionEn: "Rack of lamb, served with polenta gratinée and garden vegetables",
-      image: "/Carre dAgneau.jpg"
+      image: "/la-finestra-geneve-plat-agneau-polenta.jpg"
     },
     {
       name: "Poêlée d'Artichauts",
       price: "48.-",
       descriptionFr: "Accompagnée du Scampi, Noix de St Jacques, avec son jus de langoustines",
       descriptionEn: "Pan-fried artichokes with lobster juice, with scampi and St. Jacques scallops",
-      image: "/Poele dArtichauts.jpg"
+      image: "/la-finestra-geneve-plat-artichauts-stjacques.jpg"
     },
     {
       name: "Foie de Veau à la Vénitienne",
       price: "54.-",
       descriptionFr: "Accompagné d'un risotto au prosecco et parmesan",
       descriptionEn: "Veal liver at the Venetian, accompanied by parmesan and prosecco risotto",
-      image: "/Foie de Veau a la Venitienne.jpg"
+      image: "/la-finestra-geneve-plat-foie-veau-venitienne.jpg"
     },
     {
       name: "Tiramisu classique au cacao",
       price: "16.-",
       descriptionFr: "Café, cacao et mascarpone, un trio de saveurs qui sublime le palais",
       descriptionEn: "Traditional Tiramisu with amaretto and cocoa",
-      image: "/Tiramisu classique au cacao.jpg"
+      image: "/la-finestra-geneve-dessert-tiramisu-cacao.jpg"
     }
   ];
 

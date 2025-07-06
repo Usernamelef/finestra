@@ -11,11 +11,11 @@ const About = () => {
   ];
 
   const gallery = [
-    '/la-finestra-geneve-plat-truffes.jpg',
-    '/la-finestra-geneve-plat-specialite.jpg',
+    '/truffes.jpg',
+    '/DSC3247-web.jpg',
     '/DSC1913_422.jpg',
     '/IMG_1858.jpg',
-    '/la-finestra-geneve-facade-principale.jpeg'
+    '/image1.jpeg'
   ];
 
   return (
@@ -162,7 +162,7 @@ const About = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <div className="h-80 bg-gray-100 flex items-center justify-center">
                 <img
-                  src="/IMG_1858.jpg"
+                  src="/la-finestra-geneve-equipe-restaurant.jpg"
                   alt="L'équipe de La Finestra"
                   className="max-w-full max-h-full object-contain"
                 />

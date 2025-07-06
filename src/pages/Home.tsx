@@ -69,7 +69,7 @@ const Home = () => {
       category: 'terrasse'
     },
     {
-      src: '/Principal.jpeg',
+      src: '/la-finestra-geneve-facade-principale.jpeg',
       alt: 'Façade du restaurant La Finestra avec terrasse romantique',
       category: 'terrasse'
     },
@@ -122,7 +122,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.35), rgba(68, 15, 30, 0.35)), url('/Principal.jpeg')`
+            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.35), rgba(68, 15, 30, 0.35)), url('/la-finestra-geneve-facade-principale.jpeg')`
           }}
         />
         
@@ -186,7 +186,7 @@ const Home = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/la-finestra-geneve-facade-restaurant-authentique.jpg"
+                src="/la-finestra-geneve-facade-principale.jpeg"
                 alt="Intérieur chaleureux du restaurant La Finestra"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />

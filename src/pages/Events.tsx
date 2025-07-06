@@ -44,35 +44,35 @@ const Events = () => {
   const gallery = [
     {
       src: '/la-finestra-geneve-salle-privee-banquettes-vertes.jpg',
-      alt: 'Salle privée élégante avec banquettes en velours vert'
+      alt: 'Salle privée élégante du restaurant La Finestra avec banquettes en velours vert'
     },
     {
       src: '/la-finestra-geneve-table-dressee-verres-fleurs.jpg',
-      alt: 'Table dressée avec verres à vin et bouquet de fleurs'
+      alt: 'Table dressée du restaurant La Finestra avec verres à vin et bouquet de fleurs'
     },
     {
       src: '/la-finestra-geneve-table-detail-verrerie-fine.jpg',
-      alt: 'Détail de table avec verrerie fine et décoration florale'
+      alt: 'Détail de table du restaurant La Finestra avec verrerie fine et décoration florale'
     },
     {
       src: '/la-finestra-geneve-salle-evenement-eclairage-tamise.jpg',
-      alt: 'Vue d\'ensemble de la salle événementielle avec éclairage tamisé'
+      alt: 'Vue d\'ensemble de la salle événementielle du restaurant La Finestra avec éclairage tamisé'
     },
     {
       src: '/la-finestra-geneve-table-deux-chandelier-dore.jpg',
-      alt: 'Table pour deux personnes avec chandelier doré'
+      alt: 'Table pour deux personnes du restaurant La Finestra avec chandelier doré'
     },
     {
       src: '/la-finestra-geneve-chandelier-bronze-bougies.jpg',
-      alt: 'Chandelier en bronze avec bougies allumées'
+      alt: 'Chandelier en bronze du restaurant La Finestra avec bougies allumées'
     },
     {
       src: '/la-finestra-geneve-art-table-nappes-blanches.jpg',
-      alt: 'Art de la table raffiné avec nappes blanches'
+      alt: 'Art de la table raffiné du restaurant La Finestra avec nappes blanches'
     },
     {
       src: '/la-finestra-geneve-verres-vin-arrangement-floral.jpg',
-      alt: 'Verres à vin et arrangement floral sur table dressée'
+      alt: 'Verres à vin et arrangement floral sur table dressée du restaurant La Finestra'
     }
   ];
 

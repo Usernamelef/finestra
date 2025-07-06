@@ -12,7 +12,7 @@ const About = () => {
 
   const gallery = [
     '/la-finestra-geneve-plat-truffes.jpg',
-    '/la-finestra-geneve-interieur-salle-manger.jpg',
+    '/la-finestra-geneve-interieur-salle-manger.jpg', 
     '/la-finestra-geneve-interieur-detail-table.jpg',
     '/la-finestra-geneve-equipe-restaurant.jpg',
     '/la-finestra-geneve-facade-principale.jpeg'

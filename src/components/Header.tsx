@@ -40,7 +40,7 @@ const Header = () => {
               <img
                 src="/assets/lafinestra-geneve-logo-blanc.png"
                 alt="La Finestra Genève"
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
 

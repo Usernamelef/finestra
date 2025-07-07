@@ -43,16 +43,16 @@ const Events = () => {
 
   const gallery = [
     {
-      src: '/la-finestra-geneve-salle-privee-banquettes-vertes.jpg',
-      alt: 'Salle privée élégante du restaurant La Finestra avec banquettes en velours vert'
+      src: '/lafinestra-geneve-truffes-noires-blanches-assiette.jpg',
+      alt: 'Présentation de truffes noires et blanches sur assiette au restaurant La Finestra'
     },
     {
-      src: '/la-finestra-geneve-table-dressee-verres-fleurs.jpg',
-      alt: 'Table dressée du restaurant La Finestra avec verres à vin et bouquet de fleurs'
+      src: '/lafinestra-geneve-salle-restaurant-table-orange.jpg',
+      alt: 'Salle du restaurant La Finestra avec tables et banquettes orange'
     },
     {
-      src: '/la-finestra-geneve-table-detail-verrerie-fine.jpg',
-      alt: 'Détail de table du restaurant La Finestra avec verrerie fine et décoration florale'
+      src: '/lafinestra-geneve-decoration-florale-table.jpg',
+      alt: 'Décoration florale raffinée sur table du restaurant La Finestra'
     },
     {
       src: '/la-finestra-geneve-salle-evenement-eclairage-tamise.jpg',
@@ -83,7 +83,7 @@ const Events = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.6), rgba(68, 15, 30, 0.6)), url('/la-finestra-geneve-salle-privee-banquettes-vertes.jpg')`
+            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.6), rgba(68, 15, 30, 0.6)), url('/lafinestra-geneve-interieur-chaleureux-boiserie.jpg')`
           }}
         />
         
@@ -142,8 +142,8 @@ const Events = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/la-finestra-geneve-salle-evenement-eclairage-tamise.jpg"
-                alt="Salle privée La Finestra avec banquettes en velours"
+                src="/lafinestra-geneve-ambiance-authentique.jpg"
+                alt="Ambiance authentique de la salle événementielle La Finestra"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
             </div>

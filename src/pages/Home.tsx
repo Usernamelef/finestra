@@ -79,7 +79,7 @@ const Home = () => {
       category: 'exterieur'
     },
     {
-      src: '/lafinestra-geneve-restaurant-terrasse-soirée-lanterne.jpg',
+      src: '/lafinestra-geneve-restaurant-terrasse-soiree-lanterne.jpg',
       alt: 'Terrasse du restaurant La Finestra en soirée avec lanternes et ambiance chaleureuse',
       category: 'terrasse'
     },

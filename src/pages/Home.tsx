@@ -83,46 +83,6 @@ const Home = () => {
       alt: 'Terrasse du restaurant La Finestra en soirée avec lanternes et ambiance chaleureuse',
       category: 'terrasse'
     },
-    {
-      src: '/la-finestra-geneve-terrasse-table-cave-vins.jpeg',
-      alt: 'Table dressée en terrasse du restaurant La Finestra avec vue sur la cave à vins',
-      category: 'terrasse'
-    },
-    {
-      src: '/la-finestra-geneve-terrasse-art-table-verres.jpeg',
-      alt: 'Art de la table raffiné en terrasse du restaurant La Finestra avec verres colorés',
-      category: 'terrasse'
-    },
-    {
-      src: '/la-finestra-geneve-terrasse-rue-pavee-geneve.jpeg',
-      alt: 'Rue pavée de Genève avec terrasse du restaurant La Finestra',
-      category: 'terrasse'
-    },
-    {
-      src: '/la-finestra-geneve-interieur-salle-chaises-cuir.jpeg',
-      alt: 'Salle intérieure du restaurant La Finestra avec chaises en cuir et tables dressées',
-      category: 'interieur'
-    },
-    {
-      src: '/la-finestra-geneve-interieur-table-verres-vin.jpeg',
-      alt: 'Table dressée du restaurant La Finestra avec verres à vin et arrangement floral',
-      category: 'interieur'
-    },
-    {
-      src: '/la-finestra-geneve-interieur-decoration-romantique.jpeg',
-      alt: 'Décoration romantique du restaurant La Finestra avec cœur en bois et bougies',
-      category: 'interieur'
-    },
-    {
-      src: '/la-finestra-geneve-facade-enseigne-restaurant.jpeg',
-      alt: 'Façade du restaurant La Finestra à Genève avec enseigne',
-      category: 'exterieur'
-    },
-    {
-      src: '/la-finestra-geneve-entree-menu-affiche.jpeg',
-      alt: 'Entrée du restaurant La Finestra avec menu affiché',
-      category: 'exterieur'
-    }
   ];
 
   return (

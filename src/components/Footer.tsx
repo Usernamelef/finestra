@@ -11,7 +11,7 @@ const Footer = () => {
             <img
               src="/assets/lafinestra-geneve-logo-blanc.png"
               alt="La Finestra Genève"
-              className="h-16 w-auto mb-4"
+              className="h-20 w-auto mb-4"
             />
             <p className="text-sm text-gray-300 mb-4">
               Une fenêtre sur l'Italie au cœur de Genève depuis 2006. 

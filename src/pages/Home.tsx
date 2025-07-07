@@ -99,7 +99,7 @@ const Home = () => {
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <div className="flex justify-center mb-8 animate-fade-in-up">
             <img
-              src="/assets/lafinestra-geneve-logo-blanc.png"
+              src="/assets/lafinestra-geneve-logo-blanc.jpg"
               alt="La Finestra Genève"
               className="h-40 md:h-52 lg:h-64 w-auto"
               style={{

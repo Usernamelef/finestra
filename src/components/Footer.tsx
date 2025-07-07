@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="md:col-span-1">
             <img
-              src="/assets/lafinestra-geneve-logo-blanc.png"
+              src="/assets/lafinestra-geneve-logo-blanc.jpg"
               alt="La Finestra Genève"
               className="h-10 w-auto mb-4"
             />

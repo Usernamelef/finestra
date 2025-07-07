@@ -701,6 +701,67 @@ const Menu = () => {
           </div>
         </div>
       </section>
+
+      {/* Dishes Gallery Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-serif font-bold text-primary mb-6 animate-fade-in-up">
+              Galerie des plats
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+              Un aperçu de nos plats emblématiques, entre tradition italienne et raffinement.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="relative overflow-hidden rounded-lg shadow-lg group animate-fade-in-up" style={{animationDelay: '0s'}}>
+              <img
+                src="/assets/lafinestra-geneve-restaurant-glace-truffes-blanches.jpg"
+                alt="Glace aux truffes blanches du restaurant La Finestra"
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-lg shadow-lg group animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+              <img
+                src="/assets/lafinestra-geneve-restaurant-scampi-saint-jacques-artichauts.jpg"
+                alt="Scampi et Saint-Jacques aux artichauts du restaurant La Finestra"
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-lg shadow-lg group animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+              <img
+                src="/assets/lafinestra-geneve-restaurant-carre-agneau-polenta-legumes.jpg"
+                alt="Carré d'agneau avec polenta et légumes du restaurant La Finestra"
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-lg shadow-lg group animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+              <img
+                src="/assets/lafinestra-geneve-restaurant-foie-de-veau-venitienne-risotto.jpg"
+                alt="Foie de veau à la vénitienne avec risotto du restaurant La Finestra"
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-lg shadow-lg group animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+              <img
+                src="/assets/lafinestra-geneve-restaurant-tiramisu-chocolat-cafe.jpg"
+                alt="Tiramisu au chocolat et café du restaurant La Finestra"
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

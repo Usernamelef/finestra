@@ -11,11 +11,15 @@ const About = () => {
   ];
 
   const gallery = [
-    '/la-finestra-geneve-plat-truffes.jpg',
-    '/la-finestra-geneve-interieur-salle-manger.jpg', 
-    '/la-finestra-geneve-interieur-detail-table.jpg',
-    '/la-finestra-geneve-equipe-restaurant.jpg',
-    '/la-finestra-geneve-facade-principale.jpeg'
+    '/lafinestra-geneve-restaurant-truffes-noires-blanches-assiette.jpg',
+    '/lafinestra-geneve-restaurant-service-truffes-plat-gastronomique.jpg',
+    '/lafinestra-geneve-restaurant-salle-interieure-romantique.jpg',
+    '/lafinestra-geneve-restaurant-table-elegante-verres-deco.jpg',
+    '/lafinestra-geneve-restaurant-bar-salle-voutee.jpg',
+    '/lafinestra-geneve-restaurant-table-basse-fleurs-verres.jpg',
+    '/lafinestra-geneve-restaurant-truffes-service-chef.jpg',
+    '/lafinestra-geneve-restaurant-interieur-boiseries-lumiere-chaude.jpg',
+    '/lafinestra-geneve-restaurant-banquette-orange-table-dressee.jpg'
   ];
 
   return (
@@ -83,8 +87,8 @@ const About = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/la-finestra-geneve-facade-principale.jpeg"
-                alt="Façade du restaurant La Finestra"
+                src="/lafinestra-geneve-restaurant-vieille-ville-rue.jpg"
+                alt="Restaurant La Finestra dans la vieille ville de Genève"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
             </div>
@@ -144,7 +148,7 @@ const About = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up">
               <div className="h-80 bg-gray-100 flex items-center justify-center overflow-hidden">
                 <img
-                  src="/la-finestra-geneve-chef-cuisinier.jpeg"
+                  src="/lafinestra-geneve-restaurant-chef-cuisine-italienne.jpg"
                   alt="Le chef cuisinier de La Finestra"
                   className="w-full h-full object-cover object-center"
                 />
@@ -162,7 +166,7 @@ const About = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <div className="h-80 bg-gray-100 flex items-center justify-center">
                 <img
-                  src="/la-finestra-geneve-equipe-restaurant.jpg"
+                  src="/lafinestra-geneve-restaurant-equipe-chefs-serveurs.jpg"
                   alt="L'équipe de La Finestra"
                   className="max-w-full max-h-full object-contain"
                 />

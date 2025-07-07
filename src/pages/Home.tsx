@@ -101,14 +101,14 @@ const Home = () => {
             <img
               src="/assets/lafinestra-geneve-logo-blanc.png"
               alt="La Finestra Genève"
-              className="h-32 md:h-40 lg:h-48 w-auto"
+              className="h-28 sm:h-32 md:h-40 lg:h-48 w-auto"
               style={{
                 filter: 'drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4))'
               }}
             />
           </div>
           <p className="text-xl md:text-2xl mb-8 font-light animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Une fenêtre sur l'Italie - Cuisine italienne traditionnelle à Genève depuis 2006
+            <span className="hidden sm:inline">Une fenêtre sur l'Italie - </span>Cuisine italienne traditionnelle à Genève depuis 2006
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{animationDelay: '0.4s'}}>

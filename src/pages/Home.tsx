@@ -74,6 +74,16 @@ const Home = () => {
       category: 'terrasse'
     },
     {
+      src: '/lafinestra-geneve-restaurant-vieille-ville-rue.jpg',
+      alt: 'Restaurant La Finestra dans la vieille ville de Genève avec terrasse sur rue pavée',
+      category: 'exterieur'
+    },
+    {
+      src: '/lafinestra-geneve-restaurant-terrasse-soirée-lanterne.jpg',
+      alt: 'Terrasse du restaurant La Finestra en soirée avec lanternes et ambiance chaleureuse',
+      category: 'terrasse'
+    },
+    {
       src: '/la-finestra-geneve-terrasse-table-cave-vins.jpeg',
       alt: 'Table dressée en terrasse du restaurant La Finestra avec vue sur la cave à vins',
       category: 'terrasse'

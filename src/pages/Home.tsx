@@ -5,19 +5,22 @@ import { ChevronDown, Star, Users, Calendar, Award, ChefHat } from 'lucide-react
 const Home = () => {
   const testimonials = [
     {
-      name: "Marie Dubois",
+      name: "Céline M.",
+      date: "Novembre 2024",
       rating: 5,
-      comment: "Une expérience culinaire exceptionnelle ! Les pâtes maison sont divines et l'ambiance très chaleureuse."
+      comment: "Excellents gnocchis et penne ! Cuisine fine et raffinée, chantante et subtile. Service parfait, serveurs très attentifs, affables et discrets. Cadre chaleureux et élégant."
     },
     {
-      name: "Jean-Pierre Martin",
+      name: "Morgan J.",
+      date: "Septembre 2024",
       rating: 5,
-      comment: "Le meilleur restaurant italien de Genève. Service impeccable et cuisine authentique."
+      comment: "Service impeccable, cuisine et atmosphère exceptionnelles ! Les gnocchis et panna cotta sont un 10/10. Parfait pour un dîner romantique, je recommande vivement."
     },
     {
-      name: "Sophie Laurent",
+      name: "Steve S.",
+      date: "Mars 2024",
       rating: 5,
-      comment: "Parfait pour les événements d'entreprise. La salle privée est magnifique et la cuisine excellente."
+      comment: "Meilleure cuisine italienne de Genève ! Les tortellini aux artichauts frits étaient exceptionnels. Ma femme a adoré le tartuffo. Service attentionné et chaleureux."
     }
   ];
 
@@ -359,7 +362,10 @@ const Home = () => {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-4 italic">"{testimonial.comment}"</p>
-                <p className="font-semibold text-primary">– {testimonial.name}</p>
+                <div>
+                  <p className="font-semibold text-primary">– {testimonial.name}</p>
+                  <p className="text-sm text-gray-500">{testimonial.date}</p>
+                </div>
               </div>
             ))}
           </div>

@@ -89,7 +89,7 @@ const Events = () => {
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6 animate-fade-in-up">
-            Salle d'Événements Privés
+            Une salle événementielle et de conférence au cœur de Genève
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             Un cadre d'exception pour vos moments les plus précieux

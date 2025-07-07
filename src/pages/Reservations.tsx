@@ -378,7 +378,7 @@ const Reservations = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-2">Événements privés</h4>
-              <p>Devis personnalisé sur demande. Réservation ferme après signature du contrat et versement d'arrhes.</p>
+              <p>Devis personnalisé sur demande.</p>
             </div>
           </div>
         </div>

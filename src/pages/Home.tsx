@@ -27,21 +27,21 @@ const Home = () => {
       price: "62.-",
       descriptionFr: "Servi avec polenta gratinée et légumes du jardin",
       descriptionEn: "Rack of lamb, served with polenta gratinée and garden vegetables",
-      image: "/la-finestra-geneve-plat-agneau-polenta.jpg"
+      image: "/lafinestra-geneve-restaurant-carre-agneau-polenta.jpg"
     },
     {
       name: "Poêlée d'Artichauts",
       price: "48.-",
       descriptionFr: "Accompagnée du Scampi, Noix de St Jacques, avec son jus de langoustines",
       descriptionEn: "Pan-fried artichokes with lobster juice, with scampi and St. Jacques scallops",
-      image: "/la-finestra-geneve-plat-artichauts-scampi-stjacques.jpg"
+      image: "/lafinestra-geneve-restaurant-artichauts-scampi-saint-jacques.jpg"
     },
     {
       name: "Foie de Veau à la Vénitienne",
       price: "54.-",
       descriptionFr: "Accompagné d'un risotto au prosecco et parmesan",
       descriptionEn: "Veal liver at the Venetian, accompanied by parmesan and prosecco risotto",
-      image: "/la-finestra-geneve-plat-foie-veau-venitienne-risotto.jpg"
+      image: "/lafinestra-geneve-restaurant-foie-de-veau-venitienne.jpg"
     },
     {
       name: "Tiramisu classique au cacao",
@@ -122,7 +122,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.35), rgba(68, 15, 30, 0.35)), url('/la-finestra-geneve-facade-principale-terrasse.jpeg')`
+            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.35), rgba(68, 15, 30, 0.35)), url('/lafinestra-geneve-restaurant-devanture-bois.jpg')`
           }}
         />
         
@@ -186,8 +186,8 @@ const Home = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/la-finestra-geneve-interieur-table-romantique.jpeg"
-                alt="Table romantique à l'intérieur du restaurant La Finestra avec décoration soignée"
+                src="/lafinestra-geneve-restaurant-table-romantique-coeur.jpg"
+                alt="Table romantique du restaurant La Finestra avec décoration en forme de cœur et bougies"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
             </div>

@@ -297,7 +297,7 @@ const Contact = () => {
           <div className="text-center mt-6">
             <p className="text-gray-600 mb-4">
               <strong>Rue de la Cité 11, 1204 Genève</strong><br />
-              À 5 minutes à pied de la gare Cornavin
+              À 15 minutes à pied de la gare Cornavin
             </p>
             <a 
               href="https://maps.google.com/?q=Rue+de+la+Cité+11,+1204+Genève"

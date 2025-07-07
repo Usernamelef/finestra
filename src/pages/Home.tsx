@@ -34,14 +34,14 @@ const Home = () => {
       price: "48.-",
       descriptionFr: "Accompagnée du Scampi, Noix de St Jacques, avec son jus de langoustines",
       descriptionEn: "Pan-fried artichokes with lobster juice, with scampi and St. Jacques scallops",
-      image: "/la-finestra-geneve-plat-artichauts-stjacques.jpg"
+      image: "/la-finestra-geneve-plat-artichauts-scampi-stjacques.jpg"
     },
     {
       name: "Foie de Veau à la Vénitienne",
       price: "54.-",
       descriptionFr: "Accompagné d'un risotto au prosecco et parmesan",
       descriptionEn: "Veal liver at the Venetian, accompanied by parmesan and prosecco risotto",
-      image: "/la-finestra-geneve-plat-foie-veau-venitienne.jpg"
+      image: "/la-finestra-geneve-plat-foie-veau-venitienne-risotto.jpg"
     },
     {
       name: "Tiramisu classique au cacao",
@@ -122,7 +122,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.35), rgba(68, 15, 30, 0.35)), url('/la-finestra-geneve-facade-principale.jpeg')`
+            backgroundImage: `linear-gradient(rgba(68, 15, 30, 0.35), rgba(68, 15, 30, 0.35)), url('/la-finestra-geneve-facade-principale-terrasse.jpeg')`
           }}
         />
         
@@ -186,8 +186,8 @@ const Home = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/la-finestra-geneve-facade-principale.jpeg"
-                alt="Intérieur chaleureux du restaurant La Finestra"
+                src="/la-finestra-geneve-interieur-table-romantique.jpeg"
+                alt="Table romantique à l'intérieur du restaurant La Finestra avec décoration soignée"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
             </div>

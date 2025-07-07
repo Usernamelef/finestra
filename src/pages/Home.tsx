@@ -200,11 +200,6 @@ const Home = () => {
                       target.src = 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop';
                     }}
                   />
-                  <div className="absolute top-4 right-4">
-                    <span className="bg-accent text-white px-3 py-1 rounded-full text-lg font-bold">
-                      {dish.price}
-                    </span>
-                  </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-primary mb-3">{dish.name}</h3>

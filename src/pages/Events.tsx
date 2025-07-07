@@ -62,6 +62,18 @@ const Events = () => {
       src: '/lafinestra-geneve-table-preparee-verres-vins.jpg',
       alt: 'Table préparée avec verres à vin au restaurant La Finestra'
     },
+    {
+      src: '/lafinestra-geneve-table-preparee-verres-vins2.jpg',
+      alt: 'Table élégamment dressée avec verres à vin et décoration florale au restaurant La Finestra'
+    },
+    {
+      src: '/lafinestra-geneve-interieur-chaleureux-boiserie copy.jpg',
+      alt: 'Intérieur chaleureux avec boiseries et ambiance feutrée du restaurant La Finestra'
+    },
+    {
+      src: '/lafinestra-geneve-ambiance-authentique copy.jpg',
+      alt: 'Ambiance authentique et raffinée de la salle événementielle La Finestra'
+    }
   ];
 
   return (

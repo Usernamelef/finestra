@@ -27,28 +27,24 @@ const Home = () => {
   const specialties = [
     {
       name: "Carré d'Agneau",
-      price: "62.-",
       descriptionFr: "Servi avec polenta gratinée et légumes du jardin",
       descriptionEn: "Rack of lamb, served with polenta gratinée and garden vegetables",
       image: "/lafinestra-geneve-restaurant-carre-agneau-polenta.jpg"
     },
     {
       name: "Poêlée d'Artichauts",
-      price: "48.-",
       descriptionFr: "Accompagnée du Scampi, Noix de St Jacques, avec son jus de langoustines",
       descriptionEn: "Pan-fried artichokes with lobster juice, with scampi and St. Jacques scallops",
       image: "/lafinestra-geneve-restaurant-artichauts-scampi-saint-jacques.jpg"
     },
     {
       name: "Foie de Veau à la Vénitienne",
-      price: "54.-",
       descriptionFr: "Accompagné d'un risotto au prosecco et parmesan",
       descriptionEn: "Veal liver at the Venetian, accompanied by parmesan and prosecco risotto",
       image: "/lafinestra-geneve-restaurant-foie-de-veau-venitienne.jpg"
     },
     {
       name: "Tiramisu classique au cacao",
-      price: "16.-",
       descriptionFr: "Café, cacao et mascarpone, un trio de saveurs qui sublime le palais",
       descriptionEn: "Traditional Tiramisu with amaretto and cocoa",
       image: "/lafinestra-geneve-restaurant-tiramisu-classique-cacao.jpg"

@@ -759,6 +759,42 @@ const Menu = () => {
               />
               <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
+            
+            <div className="relative overflow-hidden rounded-lg shadow-lg group animate-fade-in-up" style={{animationDelay: '0.5s'}}>
+              <img
+                src="/lafinestra-geneve-restaurant-tiramisu-classique-cacao.jpg"
+                alt="Tiramisu classique au cacao du restaurant La Finestra"
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-lg shadow-lg group animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+              <img
+                src="/lafinestra-geneve-restaurant-foie-de-veau-venitienne.jpg"
+                alt="Foie de veau à la vénitienne du restaurant La Finestra"
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-lg shadow-lg group animate-fade-in-up" style={{animationDelay: '0.7s'}}>
+              <img
+                src="/lafinestra-geneve-restaurant-carre-agneau-polenta.jpg"
+                alt="Carré d'agneau avec polenta du restaurant La Finestra"
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-lg shadow-lg group animate-fade-in-up" style={{animationDelay: '0.8s'}}>
+              <img
+                src="/lafinestra-geneve-restaurant-artichauts-scampi-saint-jacques.jpg"
+                alt="Artichauts avec scampi et Saint-Jacques du restaurant La Finestra"
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
           </div>
         </div>
       </section>

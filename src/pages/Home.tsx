@@ -48,29 +48,29 @@ const Home = () => {
       price: "16.-",
       descriptionFr: "Café, cacao et mascarpone, un trio de saveurs qui sublime le palais",
       descriptionEn: "Traditional Tiramisu with amaretto and cocoa",
-      image: "/la-finestra-geneve-dessert-tiramisu-cacao.jpg"
+      image: "/lafinestra-geneve-restaurant-tiramisu-classique-cacao.jpg"
     }
   ];
 
   const restaurantGallery = [
     {
-      src: '/la-finestra-geneve-terrasse-romantique-lanternes.jpeg',
-      alt: 'Terrasse romantique du restaurant La Finestra avec lanternes et tables dressées dans l\'ambiance du soir',
+      src: '/lafinestra-geneve-restaurant-table-romantique-coeur.jpg',
+      alt: 'Table romantique du restaurant La Finestra avec décoration en forme de cœur et bougies',
+      category: 'interieur'
+    },
+    {
+      src: '/lafinestra-geneve-restaurant-terrasse-rue-gastronomique.jpg',
+      alt: 'Terrasse du restaurant La Finestra dans une rue gastronomique de Genève avec parasols et tables dressées',
       category: 'terrasse'
     },
     {
-      src: '/la-finestra-geneve-facade-terrasse-roses-rouges.jpeg',
-      alt: 'Façade du restaurant La Finestra à Genève avec terrasse romantique et roses rouges',
-      category: 'facade'
+      src: '/lafinestra-geneve-restaurant-table-gastronomique.jpg',
+      alt: 'Table gastronomique du restaurant La Finestra avec verres à vin et cave à vins en arrière-plan',
+      category: 'interieur'
     },
     {
-      src: '/la-finestra-geneve-terrasse-parasols-tables.jpeg',
-      alt: 'Terrasse extérieure du restaurant La Finestra avec parasols et tables dressées',
-      category: 'terrasse'
-    },
-    {
-      src: '/la-finestra-geneve-facade-principale.jpeg',
-      alt: 'Façade principale du restaurant La Finestra à Genève avec terrasse romantique',
+      src: '/lafinestra-geneve-restaurant-terrasse-parasols-menu.jpg',
+      alt: 'Terrasse du restaurant La Finestra avec parasols blancs et menu affiché',
       category: 'terrasse'
     },
     {

@@ -172,11 +172,9 @@ const About = () => {
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-primary mb-2">Notre équipe</h3>
-                <p className="text-accent font-semibold mb-4">Une famille unie par la passion</p>
+                <p className="text-accent font-semibold mb-4">Unie par la passion, guidée par l’émotion</p>
                 <p className="text-gray-700 leading-relaxed">
-                  Notre équipe expérimentée partage la même passion pour l'excellence culinaire et l'hospitalité italienne. 
-                  Ensemble, nous créons une atmosphère chaleureuse et authentique, où chaque client est accueilli comme un membre de la famille. 
-                  De la cuisine au service, chaque détail est pensé pour vous offrir une expérience inoubliable.
+                  Derrière chaque assiette et chaque geste d’attention, se cache une équipe animée par l’amour de la cuisine italienne et l’art de recevoir. Ensemble, nous cultivons une atmosphère intimiste et romantique, pensée comme une escapade sensorielle. Chaque détail, du service à l’assiette, vise à éveiller les sens et créer un moment à part, inoubliable.
                 </p>
               </div>
             </div>

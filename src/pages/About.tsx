@@ -77,8 +77,7 @@ const About = () => {
                   <div>
                     <h3 className="text-xl font-semibold text-primary mb-2">Accueil chaleureux</h3>
                     <p className="text-gray-700">
-                      Dans l'esprit de la convivialité italienne, nous accueillons chaque client 
-                      comme un membre de notre famille.
+                  Dans l’esprit de la dolce vita italienne, chaque détail est pensé pour offrir une parenthèse romantique et chaleureuse, comme une escapade à deux au cœur de l’Italie.
                     </p>
                   </div>
                 </div>

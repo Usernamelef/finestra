@@ -13,12 +13,6 @@ export default {
       fontFamily: {
         serif: ['Playfair Display', 'serif'],
         sans: ['Inter', 'sans-serif'],
-        brush: ['Brush Script MT', 'Brush Script Std', 'Lucida Handwriting', 'Apple Chancery', 'cursive'],
-      },
-      fontSize: {
-        'logo-xl': ['4rem', { lineHeight: '1.1', letterSpacing: '0.5px' }],
-        'logo-lg': ['3rem', { lineHeight: '1.1', letterSpacing: '0.5px' }],
-        'logo-md': ['2.5rem', { lineHeight: '1.1', letterSpacing: '0.5px' }],
       },
       animation: {
         'fade-in': 'fadeIn 0.8s ease-in-out',

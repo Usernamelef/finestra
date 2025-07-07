@@ -97,13 +97,16 @@ const Home = () => {
         />
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="texgyre-chorus text-secondary mb-8 animate-fade-in-up" style={{
-            fontSize: 'clamp(5rem, 10vw, 8rem)',
-            lineHeight: '1.1',
-            textShadow: '3px 3px 6px rgba(0, 0, 0, 0.4)'
-          }}>
-            La Finestra
-          </h1>
+          <div className="flex justify-center mb-8 animate-fade-in-up">
+            <img
+              src="/assets/lafinestra-geneve-logo-blanc.png"
+              alt="La Finestra Genève"
+              className="h-32 md:h-40 lg:h-48 w-auto"
+              style={{
+                filter: 'drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4))'
+              }}
+            />
+          </div>
           <p className="text-xl md:text-2xl mb-8 font-light animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             Une fenêtre sur l'Italie - Cuisine italienne traditionnelle à Genève depuis 2006
           </p>

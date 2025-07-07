@@ -36,8 +36,12 @@ const Header = () => {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <Link to="/" className="texgyre-chorus logo-medium text-secondary hover:text-white transition-colors">
-              La Finestra
+            <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <img
+                src="/assets/lafinestra-geneve-logo-blanc.png"
+                alt="La Finestra Genève"
+                className="h-12 w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}

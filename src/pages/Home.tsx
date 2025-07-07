@@ -101,7 +101,7 @@ const Home = () => {
             <img
               src="/assets/lafinestra-geneve-logo-blanc.png"
               alt="La Finestra Genève"
-              className="h-28 sm:h-32 md:h-40 lg:h-48 w-auto"
+              className="h-24 sm:h-28 md:h-36 lg:h-44 w-auto"
               style={{
                 filter: 'drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4))'
               }}

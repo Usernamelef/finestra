@@ -322,6 +322,42 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Virtual Visit Section */}
+      <section className="py-16 bg-secondary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-serif font-bold text-center text-primary mb-8">
+            Visiter notre restaurant
+          </h2>
+          
+          <p className="text-center text-gray-700 max-w-3xl mx-auto mb-8">
+            Découvrez l'intérieur de La Finestra comme si vous y étiez grâce à la visite virtuelle Google.
+          </p>
+          
+          <div className="flex justify-center">
+            <div className="w-full max-w-4xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1751974371858!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ1pxNWVCcHdF!2m2!1d46.20314379066236!2d6.144058391159511!3f47.09!4f-62.45!5f0.5970117501821992"
+                width="100%"
+                height="450"
+                className="border-0 rounded-lg shadow-lg h-[300px] md:h-[450px]"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Visite virtuelle du restaurant La Finestra"
+              />
+            </div>
+          </div>
+          
+          <div className="text-center mt-6">
+            <p className="text-gray-600 text-sm">
+              <strong>Visite virtuelle interactive</strong><br />
+              Explorez notre restaurant à 360° et découvrez notre ambiance chaleureuse
+            </p>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };

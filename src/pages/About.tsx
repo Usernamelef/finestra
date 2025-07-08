@@ -24,9 +24,9 @@ const About = () => {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="pt-40 pb-28 bg-white">
+      <section className="pt-32 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h1 className="text-5xl font-serif font-bold text-primary mb-6 animate-fade-in-up">
               À propos de La Finestra
             </h1>
@@ -39,9 +39,9 @@ const About = () => {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-24 bg-secondary">
+      <section className="py-20 bg-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-16">
             <h2 className="text-4xl font-serif font-bold text-primary animate-fade-in-up">
               Notre philosophie
             </h2>
@@ -95,7 +95,7 @@ const About = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-24 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-serif font-bold text-center text-primary mb-20">
             Notre histoire
@@ -135,7 +135,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-secondary">
+      <section className="py-20 bg-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-serif font-bold text-center text-primary mb-20">
             Notre équipe
@@ -182,7 +182,7 @@ const About = () => {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-24 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-serif font-bold text-center text-primary mb-20">
             Notre restaurant

@@ -498,9 +498,9 @@ const Menu = () => {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="pt-40 pb-28 bg-white">
+      <section className="pt-32 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h1 className="text-5xl font-serif font-bold text-primary mb-6 animate-fade-in-up">
               Notre Menu
             </h1>
@@ -512,7 +512,7 @@ const Menu = () => {
         </div>
       </section>
 
-      <section className="pb-16 bg-secondary pt-20">
+      <section className="py-16 bg-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Menu Content */}

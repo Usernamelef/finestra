@@ -6,7 +6,6 @@ const About = () => {
     { year: '2006', event: 'Ouverture de La Finestra' },
     { year: '2010', event: 'Agrandissement avec salle privée' },
     { year: '2015', event: 'Rénovation complète du restaurant' },
-    { year: '2020', event: 'Adaptation et service de livraison' },
     { year: '2025', event: 'Nouveau menu saisonnier' }
   ];
 
@@ -165,7 +164,7 @@ const About = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <div className="h-80 bg-gray-100 flex items-center justify-center">
                 <img
-                  src="/lafinestra-geneve-restaurant-equipe-chefs-serveurs.jpg"
+                  src="/lafinestra-geneve-restaurant-equipe-chefs-serveurs1.jpg"
                   alt="L'équipe de La Finestra"
                   className="max-w-full max-h-full object-contain"
                 />

@@ -5,13 +5,13 @@ const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('antipasti');
 
   const menuCategories = [
-    { id: 'antipasti', name: 'Antipasti', icon: '🧀' },
-    { id: 'primi', name: 'Primi Piatti', icon: '🍝' },
-    { id: 'carni', name: 'Le Carni', icon: '🥩' },
-    { id: 'pesci', name: 'I Pesci', icon: '🐟' },
-    { id: 'dolci', name: 'I Dolci', icon: '🍰' },
-    { id: 'menu-soir', name: 'Menu du Soir', icon: '🍽️' },
-    { id: 'boissons', name: 'Boissons & Vins', icon: '🍷' }
+    { id: 'antipasti', name: 'Antipasti' },
+    { id: 'primi', name: 'Primi Piatti' },
+    { id: 'carni', name: 'Le Carni' },
+    { id: 'pesci', name: 'I Pesci' },
+    { id: 'dolci', name: 'I Dolci' },
+    { id: 'menu-soir', name: 'Menu du Soir' },
+    { id: 'boissons', name: 'Boissons & Vins' }
   ];
 
   const menuItems = {
@@ -522,13 +522,12 @@ const Menu = () => {
                   <button
                     key={category.id}
                     onClick={() => setActiveCategory(category.id)}
-                    className={`px-4 py-2 rounded-full font-semibold transition-all duration-300 ${
+                    className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-md ${
                       activeCategory === category.id
-                        ? 'bg-primary text-white'
-                        : 'bg-white text-primary hover:bg-primary hover:text-white'
+                        ? 'bg-primary text-white shadow-lg transform scale-105'
+                        : 'bg-gradient-to-r from-white to-secondary text-primary hover:bg-primary hover:text-white hover:shadow-lg hover:transform hover:scale-105'
                     }`}
                   >
-                    <span className="mr-2">{category.icon}</span>
                     {category.name}
                   </button>
                 ))}

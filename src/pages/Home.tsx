@@ -55,7 +55,7 @@ const Home = () => {
     {
       src: '/lafinestra-geneve-restaurant-table-romantique-coeur.jpg',
       alt: 'Table romantique du restaurant La Finestra avec décoration en forme de cœur et bougies',
-      category: 'interieur'
+      category: 'exterieur'
     },
     {
       src: '/lafinestra-geneve-restaurant-terrasse-rue-gastronomique.jpg',
@@ -65,7 +65,7 @@ const Home = () => {
     {
       src: '/lafinestra-geneve-restaurant-table-gastronomique.jpg',
       alt: 'Table gastronomique du restaurant La Finestra avec verres à vin et cave à vins en arrière-plan',
-      category: 'interieur'
+      category: 'exterieur'
     },
     {
       src: '/lafinestra-geneve-restaurant-terrasse-parasols-menu.jpg',
@@ -158,8 +158,8 @@ const Home = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/lafinestra-geneve-restaurant-table-romantique-coeur.jpg"
-                alt="Table romantique du restaurant La Finestra avec décoration en forme de cœur et bougies"
+                src="/lafinestra-geneve-restaurant-terrasse-soirée-lanterne.jpg"
+                alt="Terrasse du restaurant La Finestra en soirée avec lanternes et ambiance chaleureuse"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
             </div>
@@ -257,7 +257,8 @@ const Home = () => {
                   <span className="text-white font-semibold text-lg capitalize">
                     {image.category === 'facade' ? 'Façade' :
                      image.category === 'terrasse' ? 'Terrasse' : 
-                     image.category === 'interieur' ? 'Intérieur' : 'Extérieur'}
+                     image.category === 'interieur' ? 'Intérieur' : 
+                     image.category === 'exterieur' ? 'Extérieur' : 'Intérieur'}
                   </span>
                 </div>
               </div>

@@ -158,7 +158,7 @@ const Home = () => {
             
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <img
-                src="/lafinestra-geneve-restaurant-terrasse-soirée-lanterne copy.jpg"
+                src="/lafinestra-geneve-restaurant-terrasse-soiree-lanterne copy.jpg"
                 alt="Terrasse du restaurant La Finestra en soirée avec lanternes et ambiance chaleureuse"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />

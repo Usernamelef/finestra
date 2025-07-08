@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Wine, Coffee, Martini, ChefHat } from 'lucide-react';
+import '../styles/menu-nav.css';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('antipasti');
@@ -517,15 +518,15 @@ const Menu = () => {
             {/* Menu Content */}
             <div className="lg:w-3/4">
               {/* Category Navigation */}
-              <div className="flex flex-wrap gap-2 mb-20 justify-center">
+              <div className="nav-tabs flex-wrap mb-20 justify-center">
                 {menuCategories.map((category) => (
                   <button
                     key={category.id}
                     onClick={() => setActiveCategory(category.id)}
-                    className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-md ${
+                    className={`nav-tab ${
                       activeCategory === category.id
-                        ? 'bg-primary text-white shadow-lg transform scale-105'
-                        : 'bg-gradient-to-r from-white to-secondary text-primary hover:bg-primary hover:text-white hover:shadow-lg hover:transform hover:scale-105'
+                        ? 'active'
+                        : ''
                     }`}
                   >
                     {category.name}

@@ -1,0 +1,29 @@
+.nav-tabs {
+  display: flex;
+  gap: 12px;
+  padding: 16px 0;
+}
+
+.nav-tab {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.nav-tab.active {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.nav-tab:not(.active) {
+  background-color: #f8f8f8;
+  color: #333333;
+}
+
+.nav-tab:hover:not(.active) {
+  background-color: #f0f0f0;
+}
